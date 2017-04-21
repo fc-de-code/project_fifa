@@ -1,0 +1,12 @@
+Project_Fifa > Applicatie(C# Applicatie map)
+	     > bijlagen > SQL
+
+	     > documentaticie (Map met alle documemtatie die we zelf maken) > afspraken(map met de afspraken)
+	     > huisstyl(map met de huis style) > doc(map met de office bestanden)
+					       > logo(map met het logo)
+					       > psd(map met photoshop bestanden)
+
+	     > logboek(Map met de logboeken)
+	     > Notules(map met onze notules)
+	     > Project documentatie (map met de documentatie van school)
+	     > techinische ontwerpen (Map met de techinshe ontwerpen)
