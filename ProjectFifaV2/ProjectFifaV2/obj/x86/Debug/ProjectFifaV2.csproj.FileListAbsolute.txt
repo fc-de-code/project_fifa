@@ -38,3 +38,17 @@ D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Deb
 D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.csproj.GenerateResource.Cache
 D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.exe
 D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.pdb
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\ProjectFifaV2.exe.config
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.exe
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.pdb
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\db.mdf
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\db_log.ldf
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\ProjectFifaV2.exe
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\ProjectFifaV2.pdb
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.csprojResolveAssemblyReference.cache
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmAdmin.resources
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmLogin.resources
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmPlayer.resources
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmRanking.resources
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.Properties.Resources.resources
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.csproj.GenerateResource.Cache
