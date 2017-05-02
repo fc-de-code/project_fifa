@@ -24,3 +24,17 @@ C:\Users\Bart Roos\Dropbox\Radius\_Project FIFA\ProjectFifaV2\ProjectFifaV2\obj\
 C:\Users\Bart Roos\Dropbox\Radius\_Project FIFA\ProjectFifaV2\ProjectFifaV2\bin\Debug\db.mdf
 C:\Users\Bart Roos\Dropbox\Radius\_Project FIFA\ProjectFifaV2\ProjectFifaV2\bin\Debug\db_log.ldf
 C:\Users\Bart Roos\Dropbox\Radius\_Project FIFA\ProjectFifaV2\ProjectFifaV2\bin\Debug\ProjectFifaV2.exe.config
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\db.mdf
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\db_log.ldf
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\ProjectFifaV2.exe.config
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\ProjectFifaV2.exe
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\ProjectFifaV2.pdb
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.csprojResolveAssemblyReference.cache
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmAdmin.resources
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmLogin.resources
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmPlayer.resources
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmRanking.resources
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.Properties.Resources.resources
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.csproj.GenerateResource.Cache
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.exe
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.pdb
