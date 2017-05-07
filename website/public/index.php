@@ -81,7 +81,30 @@
         </div>
       </div>
       <footer>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <ul>
+          <li>Jean-pierre slimmen</li>
+          <li>D210612@edu.rocwb.nl</li>
+          <li>tel:06-81083977</li>
+          <li>Radius College</li>
+        </ul>
+        <ul>
+          <li>Mike Steinhoff</li>
+          <li>D204650@edu.rocwb.nl</li>
+          <li>tel:06-19509272</li>
+          <li>Radius College</li>
+        </ul>
+        <ul>
+          <li>Roel Mast</li>
+          <li>RM150928@edu.rocwb.nl</li>
+          <li>tel:06-53809409</li>
+          <li>Radius College</li>
+        </ul>
+        <ul>
+          <li>Gino Soffers</li>
+          <li>D201664@edu.rocwb.nl</li>
+          <li>tel:06-92592008</li>
+          <li>Radius College</li>
+        </ul>
       </footer>
     </div>
 

@@ -57,7 +57,7 @@ h1 {
 }
 
 .hero .wrapper img {
-  width: 15%;
+  width: 10%;
   align-self: center;
 }
 
@@ -231,5 +231,11 @@ nav .navigation a:hover {
 footer {
   margin-top: 80px;
   border-top: 5px double #3a3a3a;
-  padding: 50px;
+  padding: 20px;
+  column-count: 4;
+}
+
+footer li {
+  text-align: center;
+  list-style: none;
 }
