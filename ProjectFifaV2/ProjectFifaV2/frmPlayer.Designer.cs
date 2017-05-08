@@ -39,12 +39,13 @@
             this.clmTeamSaldo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmRanking = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pnlPredCard = new System.Windows.Forms.Panel();
+            this.btnAdmin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnEditPrediction
             // 
             this.btnEditPrediction.Location = new System.Drawing.Point(485, 86);
-            this.btnEditPrediction.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEditPrediction.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditPrediction.Name = "btnEditPrediction";
             this.btnEditPrediction.Size = new System.Drawing.Size(141, 37);
             this.btnEditPrediction.TabIndex = 1;
@@ -54,7 +55,7 @@
             // btnClearPrediction
             // 
             this.btnClearPrediction.Location = new System.Drawing.Point(485, 146);
-            this.btnClearPrediction.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnClearPrediction.Margin = new System.Windows.Forms.Padding(4);
             this.btnClearPrediction.Name = "btnClearPrediction";
             this.btnClearPrediction.Size = new System.Drawing.Size(141, 37);
             this.btnClearPrediction.TabIndex = 2;
@@ -64,8 +65,8 @@
             // 
             // btnLogOut
             // 
-            this.btnLogOut.Location = new System.Drawing.Point(485, 213);
-            this.btnLogOut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogOut.Location = new System.Drawing.Point(13, 848);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(141, 37);
             this.btnLogOut.TabIndex = 3;
@@ -86,7 +87,7 @@
             // btnShowRanking
             // 
             this.btnShowRanking.Location = new System.Drawing.Point(485, 26);
-            this.btnShowRanking.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnShowRanking.Margin = new System.Windows.Forms.Padding(4);
             this.btnShowRanking.Name = "btnShowRanking";
             this.btnShowRanking.Size = new System.Drawing.Size(141, 37);
             this.btnShowRanking.TabIndex = 6;
@@ -102,7 +103,7 @@
             this.clmTeamSaldo,
             this.clmRanking});
             this.lvOverview.Location = new System.Drawing.Point(919, 67);
-            this.lvOverview.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lvOverview.Margin = new System.Windows.Forms.Padding(4);
             this.lvOverview.Name = "lvOverview";
             this.lvOverview.Size = new System.Drawing.Size(412, 738);
             this.lvOverview.TabIndex = 7;
@@ -133,17 +134,28 @@
             // 
             // pnlPredCard
             // 
-            this.pnlPredCard.Location = new System.Drawing.Point(16, 44);
-            this.pnlPredCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlPredCard.Location = new System.Drawing.Point(16, 522);
+            this.pnlPredCard.Margin = new System.Windows.Forms.Padding(4);
             this.pnlPredCard.Name = "pnlPredCard";
-            this.pnlPredCard.Size = new System.Drawing.Size(461, 737);
+            this.pnlPredCard.Size = new System.Drawing.Size(461, 259);
             this.pnlPredCard.TabIndex = 8;
+            // 
+            // btnAdmin
+            // 
+            this.btnAdmin.Location = new System.Drawing.Point(191, 848);
+            this.btnAdmin.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdmin.Name = "btnAdmin";
+            this.btnAdmin.Size = new System.Drawing.Size(141, 37);
+            this.btnAdmin.TabIndex = 9;
+            this.btnAdmin.Text = "Admin";
+            this.btnAdmin.UseVisualStyleBackColor = true;
             // 
             // frmPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1344, 898);
+            this.Controls.Add(this.btnAdmin);
             this.Controls.Add(this.pnlPredCard);
             this.Controls.Add(this.lvOverview);
             this.Controls.Add(this.btnShowRanking);
@@ -151,7 +163,7 @@
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.btnClearPrediction);
             this.Controls.Add(this.btnEditPrediction);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPlayer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PlayerName";
@@ -173,5 +185,6 @@
         private System.Windows.Forms.ColumnHeader clmTeamSaldo;
         private System.Windows.Forms.ColumnHeader clmRanking;
         private System.Windows.Forms.Panel pnlPredCard;
+        private System.Windows.Forms.Button btnAdmin;
     }
 }
