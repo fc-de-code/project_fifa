@@ -63,11 +63,15 @@ h1 {
 
 .hero .wrapper h1 {
   width: 290px;
-  font-size: 70px;
+  font-size: 4.375em;
 }
 
 .hero .wrapper .text-align {
   text-align: right;
+}
+
+.hero .wrapper h2 {
+  font-size: 4em;
 }
 
 nav {
