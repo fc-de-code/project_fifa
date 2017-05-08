@@ -1,22 +1,42 @@
 @import "web-colors/colors.sass"
 @import "css-reset.sass"
-@import "fonts/fonts.sass"
+
 
 html
   font-size: 16px
 body
   background-color: #1b1b1c
+  width: 100%
 
-h1, h2, h3, h4, h5, h6, p, li,a,
+h2, h3, h4, h5, h6, p, li,a,
   color: $text-color
-  font-family: Prototype
+  font-family: 'Baloo'
+h1
+  font-family: 'Shrikhand'
+  color: $text-color
 .wrapper
   margin: 0 auto
+  width: 80%
+.content
+  border: 5px double $hover-color
+  width: 100%
+
+
+.hero .wrapper
   display: flex
   justify-content: center
-  width: 80%
+  align-items: center
+  img
+    width: 10%
+    align-self: center
+  h1
+    width: 290px
+    font-size: 70px
+  .text-align
+    text-align: right
 
 nav
+  margin-top: 10px
   background-color: $background-color
   border-top: 5px double $hover-color
   border-bottom: 5px double $hover-color
@@ -33,7 +53,7 @@ nav
       padding: 10px 40px
       text-decoration: none
       text-align: center
-      font-size: 1em
+      font-size: 1.1em
     a:hover
       background-color: $hover-color
       cursor: pointer
@@ -87,17 +107,17 @@ nav
         font-weight: bold
         margin: 10px
         align-self: center
-        font-family: Prototype
+        font-family: 'Baloo'
       input
         width: 60%
         padding: 10px
-        border-top: 2px groove $hover-color
+        border-top: 5px double $hover-color
         border-left: none
         border-right: none
-        border-bottom: 2px groove $hover-color
+        border-bottom: 5px double $hover-color
         font-size: 1.2em
         align-self: center
-        font-family: Prototype
+        font-family: 'Baloo'
       button
         margin: 40px
         padding: 10px 20px
@@ -106,4 +126,43 @@ nav
         border-style: none
         font-size: 1.2em
         font-weight: bold
-        font-family: Prototype
+        font-family: 'Baloo'
+.introwebsite .wrapper
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-top: 50px
+  flex-direction: column
+  h2
+    font-size: 2em
+
+  p
+    font-size: 1em
+    text-align: center
+    margin: 20px
+
+.team-score .wrapper
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-top: 50px
+  flex-direction: column
+  h2
+    font-size: 2em
+  p
+    font-size:
+
+  .team-list
+    column-count: 3
+    li
+      text-align: center
+      list-style: none
+
+footer
+  margin-top: 80px
+  border-top: 5px double $hover-color
+  padding: 20px
+  column-count: 4
+  li
+    text-align: center
+    list-style: none

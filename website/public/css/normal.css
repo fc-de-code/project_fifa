@@ -21,36 +21,57 @@ html {
   font-size: 16px;
 }
 
-@font-face {
-  font-family: "Prototype";
-  src: url("../fonts/Prototype.eot");
-  src: url("../fonts/Prototype.svg#bingo") format("svg");
-  src: url("../fonts/Prototype.ttf") format("TrueType");
-  font-style: normal;
-  font-weight: normal;
-}
-
 html {
   font-size: 16px;
 }
 
 body {
   background-color: #1b1b1c;
+  width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6, p, li, a {
+h2, h3, h4, h5, h6, p, li, a {
   color: #fff;
-  font-family: Prototype;
+  font-family: 'Baloo';
+}
+
+h1 {
+  font-family: 'Shrikhand';
+  color: #fff;
 }
 
 .wrapper {
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
   width: 80%;
 }
 
+.content {
+  border: 5px double #3a3a3a;
+  width: 100%;
+}
+
+.hero .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .wrapper img {
+  width: 10%;
+  align-self: center;
+}
+
+.hero .wrapper h1 {
+  width: 290px;
+  font-size: 70px;
+}
+
+.hero .wrapper .text-align {
+  text-align: right;
+}
+
 nav {
+  margin-top: 10px;
   background-color: #1b1b1c;
   border-top: 5px double #3a3a3a;
   border-bottom: 5px double #3a3a3a;
@@ -73,7 +94,7 @@ nav .navigation a {
   padding: 10px 40px;
   text-decoration: none;
   text-align: center;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 nav .navigation a:hover {
@@ -142,19 +163,19 @@ nav .navigation a:hover {
   font-weight: bold;
   margin: 10px;
   align-self: center;
-  font-family: Prototype;
+  font-family: 'Baloo';
 }
 
 .login .loginwindow form input {
   width: 60%;
   padding: 10px;
-  border-top: 2px groove #3a3a3a;
+  border-top: 5px double #3a3a3a;
   border-left: none;
   border-right: none;
-  border-bottom: 2px groove #3a3a3a;
+  border-bottom: 5px double #3a3a3a;
   font-size: 1.2em;
   align-self: center;
-  font-family: Prototype;
+  font-family: 'Baloo';
 }
 
 .login .loginwindow form button {
@@ -165,5 +186,56 @@ nav .navigation a:hover {
   border-style: none;
   font-size: 1.2em;
   font-weight: bold;
-  font-family: Prototype;
+  font-family: 'Baloo';
+}
+
+.introwebsite .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  flex-direction: column;
+}
+
+.introwebsite .wrapper h2 {
+  font-size: 2em;
+}
+
+.introwebsite .wrapper p {
+  font-size: 1em;
+  text-align: center;
+  margin: 20px;
+}
+
+.team-score .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  flex-direction: column;
+}
+
+.team-score .wrapper h2 {
+  font-size: 2em;
+}
+
+.team-score .wrapper .team-list {
+  column-count: 3;
+}
+
+.team-score .wrapper .team-list li {
+  text-align: center;
+  list-style: none;
+}
+
+footer {
+  margin-top: 80px;
+  border-top: 5px double #3a3a3a;
+  padding: 20px;
+  column-count: 4;
+}
+
+footer li {
+  text-align: center;
+  list-style: none;
 }
