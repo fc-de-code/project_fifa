@@ -36,25 +36,27 @@
             this.lvOverview = new System.Windows.Forms.ListView();
             this.clmHomeTeam = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmHomeTeamScore = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.clmAwayTeamScore = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.clmAwayTeam = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clmTeamSaldo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.clmRanking = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pnlPredCard = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // btnEditPrediction
             // 
-            this.btnEditPrediction.Location = new System.Drawing.Point(364, 70);
+            this.btnEditPrediction.Location = new System.Drawing.Point(485, 86);
+            this.btnEditPrediction.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEditPrediction.Name = "btnEditPrediction";
-            this.btnEditPrediction.Size = new System.Drawing.Size(106, 30);
+            this.btnEditPrediction.Size = new System.Drawing.Size(141, 37);
             this.btnEditPrediction.TabIndex = 1;
             this.btnEditPrediction.Text = "Edit Prediction";
             this.btnEditPrediction.UseVisualStyleBackColor = true;
             // 
             // btnClearPrediction
             // 
-            this.btnClearPrediction.Location = new System.Drawing.Point(364, 119);
+            this.btnClearPrediction.Location = new System.Drawing.Point(485, 146);
+            this.btnClearPrediction.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnClearPrediction.Name = "btnClearPrediction";
-            this.btnClearPrediction.Size = new System.Drawing.Size(106, 30);
+            this.btnClearPrediction.Size = new System.Drawing.Size(141, 37);
             this.btnClearPrediction.TabIndex = 2;
             this.btnClearPrediction.Text = "Clear Prediction";
             this.btnClearPrediction.UseVisualStyleBackColor = true;
@@ -62,9 +64,10 @@
             // 
             // btnLogOut
             // 
-            this.btnLogOut.Location = new System.Drawing.Point(364, 173);
+            this.btnLogOut.Location = new System.Drawing.Point(485, 213);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(106, 30);
+            this.btnLogOut.Size = new System.Drawing.Size(141, 37);
             this.btnLogOut.TabIndex = 3;
             this.btnLogOut.Text = "Log Out";
             this.btnLogOut.UseVisualStyleBackColor = true;
@@ -73,17 +76,19 @@
             // lblResultsOverview
             // 
             this.lblResultsOverview.AutoSize = true;
-            this.lblResultsOverview.Location = new System.Drawing.Point(582, 20);
+            this.lblResultsOverview.Location = new System.Drawing.Point(916, 36);
+            this.lblResultsOverview.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblResultsOverview.Name = "lblResultsOverview";
-            this.lblResultsOverview.Size = new System.Drawing.Size(90, 13);
+            this.lblResultsOverview.Size = new System.Drawing.Size(117, 17);
             this.lblResultsOverview.TabIndex = 5;
             this.lblResultsOverview.Text = "Results Overview";
             // 
             // btnShowRanking
             // 
-            this.btnShowRanking.Location = new System.Drawing.Point(364, 21);
+            this.btnShowRanking.Location = new System.Drawing.Point(485, 26);
+            this.btnShowRanking.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnShowRanking.Name = "btnShowRanking";
-            this.btnShowRanking.Size = new System.Drawing.Size(106, 30);
+            this.btnShowRanking.Size = new System.Drawing.Size(141, 37);
             this.btnShowRanking.TabIndex = 6;
             this.btnShowRanking.Text = "Show Ranking";
             this.btnShowRanking.UseVisualStyleBackColor = true;
@@ -94,11 +99,12 @@
             this.lvOverview.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.clmHomeTeam,
             this.clmHomeTeamScore,
-            this.clmAwayTeamScore,
-            this.clmAwayTeam});
-            this.lvOverview.Location = new System.Drawing.Point(476, 36);
+            this.clmTeamSaldo,
+            this.clmRanking});
+            this.lvOverview.Location = new System.Drawing.Point(919, 67);
+            this.lvOverview.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lvOverview.Name = "lvOverview";
-            this.lvOverview.Size = new System.Drawing.Size(310, 600);
+            this.lvOverview.Size = new System.Drawing.Size(412, 738);
             this.lvOverview.TabIndex = 7;
             this.lvOverview.UseCompatibleStateImageBehavior = false;
             this.lvOverview.View = System.Windows.Forms.View.Details;
@@ -114,29 +120,30 @@
             this.clmHomeTeamScore.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.clmHomeTeamScore.Width = 50;
             // 
-            // clmAwayTeamScore
+            // clmTeamSaldo
             // 
-            this.clmAwayTeamScore.Text = "Score";
-            this.clmAwayTeamScore.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.clmAwayTeamScore.Width = 50;
+            this.clmTeamSaldo.Text = "saldo";
+            this.clmTeamSaldo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.clmTeamSaldo.Width = 50;
             // 
-            // clmAwayTeam
+            // clmRanking
             // 
-            this.clmAwayTeam.Text = "Away Team";
-            this.clmAwayTeam.Width = 100;
+            this.clmRanking.Text = "Ranking";
+            this.clmRanking.Width = 100;
             // 
             // pnlPredCard
             // 
-            this.pnlPredCard.Location = new System.Drawing.Point(12, 36);
+            this.pnlPredCard.Location = new System.Drawing.Point(16, 44);
+            this.pnlPredCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlPredCard.Name = "pnlPredCard";
-            this.pnlPredCard.Size = new System.Drawing.Size(346, 599);
+            this.pnlPredCard.Size = new System.Drawing.Size(461, 737);
             this.pnlPredCard.TabIndex = 8;
             // 
             // frmPlayer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 730);
+            this.ClientSize = new System.Drawing.Size(1344, 898);
             this.Controls.Add(this.pnlPredCard);
             this.Controls.Add(this.lvOverview);
             this.Controls.Add(this.btnShowRanking);
@@ -144,6 +151,7 @@
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.btnClearPrediction);
             this.Controls.Add(this.btnEditPrediction);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmPlayer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PlayerName";
@@ -162,8 +170,8 @@
         private System.Windows.Forms.ListView lvOverview;
         private System.Windows.Forms.ColumnHeader clmHomeTeam;
         private System.Windows.Forms.ColumnHeader clmHomeTeamScore;
-        private System.Windows.Forms.ColumnHeader clmAwayTeamScore;
-        private System.Windows.Forms.ColumnHeader clmAwayTeam;
+        private System.Windows.Forms.ColumnHeader clmTeamSaldo;
+        private System.Windows.Forms.ColumnHeader clmRanking;
         private System.Windows.Forms.Panel pnlPredCard;
     }
 }
