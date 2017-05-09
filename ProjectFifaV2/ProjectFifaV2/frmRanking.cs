@@ -51,5 +51,10 @@ namespace ProjectFifaV2
             }
             dbh.CloseConnectionToDB();
         }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
