@@ -150,6 +150,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>db.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\LogoTest.gif" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">

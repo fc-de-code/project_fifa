@@ -116,10 +116,10 @@
             this.clmHomeTeamScore,
             this.clmTeamSaldo});
             this.lvOverview.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lvOverview.Location = new System.Drawing.Point(851, 55);
+            this.lvOverview.Location = new System.Drawing.Point(853, 61);
             this.lvOverview.Margin = new System.Windows.Forms.Padding(4);
             this.lvOverview.Name = "lvOverview";
-            this.lvOverview.Size = new System.Drawing.Size(349, 738);
+            this.lvOverview.Size = new System.Drawing.Size(398, 738);
             this.lvOverview.TabIndex = 7;
             this.lvOverview.UseCompatibleStateImageBehavior = false;
             this.lvOverview.View = System.Windows.Forms.View.Details;
@@ -321,7 +321,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(1047, 24);
+            this.label8.Location = new System.Drawing.Point(1098, 25);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(153, 24);
