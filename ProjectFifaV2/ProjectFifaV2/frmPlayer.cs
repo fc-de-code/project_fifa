@@ -148,5 +148,10 @@ namespace ProjectFifaV2
         {
             userName = un;
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
