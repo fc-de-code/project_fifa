@@ -30,7 +30,7 @@ namespace ProjectFifaV2
         private void SetListColumnWidth()
         {
             clmRank.Width = 45;
-            clmName.Width = 300;
+            clmNaam.Width = 300;
             clmScore.Width = 80;
         }
 
