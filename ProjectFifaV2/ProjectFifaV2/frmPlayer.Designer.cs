@@ -86,12 +86,15 @@
             // 
             // btnLogOut
             // 
+            this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogOut.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogOut.ForeColor = System.Drawing.Color.White;
             this.btnLogOut.Location = new System.Drawing.Point(13, 848);
             this.btnLogOut.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(141, 37);
             this.btnLogOut.TabIndex = 3;
-            this.btnLogOut.Text = "Log Out";
+            this.btnLogOut.Text = "LogOut";
             this.btnLogOut.UseVisualStyleBackColor = true;
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
             // 
@@ -127,7 +130,7 @@
             // clmTeam1
             // 
             this.clmTeam1.Text = "Team 1";
-            this.clmTeam1.Width = 136;
+            this.clmTeam1.Width = 146;
             // 
             // clmHomeTeamScore
             // 
@@ -139,7 +142,7 @@
             // 
             this.clmTeamSaldo.Text = "Team2";
             this.clmTeamSaldo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.clmTeamSaldo.Width = 132;
+            this.clmTeamSaldo.Width = 193;
             // 
             // pnlPredCard
             // 
@@ -152,6 +155,9 @@
             // 
             // btnAdmin
             // 
+            this.btnAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdmin.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdmin.ForeColor = System.Drawing.Color.White;
             this.btnAdmin.Location = new System.Drawing.Point(377, 848);
             this.btnAdmin.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdmin.Name = "btnAdmin";
@@ -162,6 +168,9 @@
             // 
             // btnRanking
             // 
+            this.btnRanking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRanking.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRanking.ForeColor = System.Drawing.Color.White;
             this.btnRanking.Location = new System.Drawing.Point(194, 848);
             this.btnRanking.Margin = new System.Windows.Forms.Padding(4);
             this.btnRanking.Name = "btnRanking";
