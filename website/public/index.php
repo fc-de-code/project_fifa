@@ -9,33 +9,7 @@
           <h1>FIFA</h1>
         </div>
       </div>
-      <nav>
-        <div class="navigation">
-          <ul>
-            <li><a href="index.php">HOME</a></li>
-            <li><a href="finales.php">FINALES</a></li>
-            <li><a href="resultaat.php">RESULTAAT</a></li>
-            <li><a href="teams.php">TEAMS</a></li>
-          </ul>
-          <a id="open">LOGIN</a>
-        </div>
-      </nav>
-
-      <div id="popup" class="login">
-        <div class="loginwindow">
-          <div class="loginheader">
-            <h3>login</h3>
-            <span class="close">&times;</span>
-          </div>
-          <form action="../loginmanager.php" method="post">
-            <label for="Username">Username</label>
-            <input type="text" placeholder="Enter Username" name="Username" id="username" required>
-            <label for="password">Password</label>
-            <input type="password" placeholder="Enter Password" name="password" id="password" required>
-            <button type="submit" value="Submit">Login</button>
-          </form>
-        </div>
-      </div>
+      <?php require(realpath(__DIR__) . '/templates/navigatie.php'); ?>
       <div class="introwebsite">
         <div class="wrapper">
           <h2>Introductie</h2>
@@ -80,34 +54,7 @@
           </div>
         </div>
       </div>
-      <footer>
-        <ul>
-          <li>Jean-pierre slimmen</li>
-          <li>D210612@edu.rocwb.nl</li>
-          <li>tel:06-81083977</li>
-          <li>Radius College</li>
-        </ul>
-        <ul>
-          <li>Mike Steinhoff</li>
-          <li>D204650@edu.rocwb.nl</li>
-          <li>tel:06-19509272</li>
-          <li>Radius College</li>
-        </ul>
-        <ul>
-          <li>Roel Mast</li>
-          <li>RM150928@edu.rocwb.nl</li>
-          <li>tel:06-53809409</li>
-          <li>Radius College</li>
-        </ul>
-        <ul>
-          <li>Gino Soffers</li>
-          <li>D201664@edu.rocwb.nl</li>
-          <li>tel:06-92592008</li>
-          <li>Radius College</li>
-        </ul>
-      </footer>
+      <?php require(realpath(__DIR__) . '/templates/footer-content.php'); ?>
     </div>
-
-    <script src="js/loginpopup.js"></script>
-
+    
 <?php require(realpath(__DIR__) . '/templates/footer.php');
