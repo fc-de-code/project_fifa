@@ -263,7 +263,7 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(165, 24);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(283, 54);
+            this.label2.Size = new System.Drawing.Size(275, 53);
             this.label2.TabIndex = 19;
             this.label2.Text = "Weddenschap";
             // 
