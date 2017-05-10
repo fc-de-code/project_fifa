@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace ProjectFifaV2
 {
-    public partial class frmPlayer : Form
+    public partial class btnClear : Form
     {
         private Form frmRanking;
         private DatabaseHandler dbh;
@@ -17,7 +17,7 @@ namespace ProjectFifaV2
 
         List<TextBox> txtBoxList;
 
-        public frmPlayer(Form frm, string un)
+        public btnClear(Form frm, string un)
         {
             this.ControlBox = false;
             frmRanking = frm;
@@ -175,6 +175,11 @@ namespace ProjectFifaV2
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lvOverview_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
