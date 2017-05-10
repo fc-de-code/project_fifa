@@ -49,7 +49,7 @@
             this.btnLoguit.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoguit.ForeColor = System.Drawing.Color.White;
             this.btnLoguit.Location = new System.Drawing.Point(535, 580);
-            this.btnLoguit.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnLoguit.Margin = new System.Windows.Forms.Padding(5);
             this.btnLoguit.Name = "btnLoguit";
             this.btnLoguit.Size = new System.Drawing.Size(126, 47);
             this.btnLoguit.TabIndex = 1;
@@ -67,7 +67,7 @@
             this.clmScore});
             this.lvRanking.ForeColor = System.Drawing.SystemColors.InactiveBorder;
             this.lvRanking.Location = new System.Drawing.Point(47, 78);
-            this.lvRanking.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.lvRanking.Margin = new System.Windows.Forms.Padding(5);
             this.lvRanking.Name = "lvRanking";
             this.lvRanking.Size = new System.Drawing.Size(429, 912);
             this.lvRanking.TabIndex = 2;
@@ -91,6 +91,9 @@
             // 
             // listView1
             // 
+            this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listView1.BackColor = System.Drawing.Color.Silver;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.clmTeam,
@@ -100,7 +103,7 @@
             this.listView1.ForeColor = System.Drawing.Color.White;
             this.listView1.FullRowSelect = true;
             this.listView1.Location = new System.Drawing.Point(734, 78);
-            this.listView1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.listView1.Margin = new System.Windows.Forms.Padding(5);
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(433, 912);
             this.listView1.TabIndex = 3;
@@ -136,7 +139,7 @@
             this.btnWedstrijd.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnWedstrijd.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.btnWedstrijd.Location = new System.Drawing.Point(535, 244);
-            this.btnWedstrijd.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnWedstrijd.Margin = new System.Windows.Forms.Padding(5);
             this.btnWedstrijd.Name = "btnWedstrijd";
             this.btnWedstrijd.Size = new System.Drawing.Size(126, 47);
             this.btnWedstrijd.TabIndex = 4;
@@ -150,7 +153,7 @@
             this.btnAdmins.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdmins.ForeColor = System.Drawing.Color.White;
             this.btnAdmins.Location = new System.Drawing.Point(535, 419);
-            this.btnAdmins.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnAdmins.Margin = new System.Windows.Forms.Padding(5);
             this.btnAdmins.Name = "btnAdmins";
             this.btnAdmins.Size = new System.Drawing.Size(126, 47);
             this.btnAdmins.TabIndex = 5;
@@ -159,7 +162,7 @@
             // 
             // frmRanking
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(28)))));
             this.ClientSize = new System.Drawing.Size(1248, 1045);
@@ -171,7 +174,7 @@
             this.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmRanking";
