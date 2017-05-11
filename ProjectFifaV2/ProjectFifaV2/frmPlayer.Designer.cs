@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnEditPrediction = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
             this.btnClearPrediction = new System.Windows.Forms.Button();
             this.btnLogOut = new System.Windows.Forms.Button();
             this.lblResultsOverview = new System.Windows.Forms.Label();
@@ -56,18 +56,19 @@
             this.clmTeamSaldo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
-            // btnEditPrediction
+            // btnEdit
             // 
-            this.btnEditPrediction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditPrediction.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
-            this.btnEditPrediction.ForeColor = System.Drawing.Color.Gray;
-            this.btnEditPrediction.Location = new System.Drawing.Point(27, 303);
-            this.btnEditPrediction.Margin = new System.Windows.Forms.Padding(4);
-            this.btnEditPrediction.Name = "btnEditPrediction";
-            this.btnEditPrediction.Size = new System.Drawing.Size(141, 37);
-            this.btnEditPrediction.TabIndex = 1;
-            this.btnEditPrediction.Text = "btnEdit";
-            this.btnEditPrediction.UseVisualStyleBackColor = true;
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEdit.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
+            this.btnEdit.ForeColor = System.Drawing.Color.Gray;
+            this.btnEdit.Location = new System.Drawing.Point(27, 303);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(141, 37);
+            this.btnEdit.TabIndex = 1;
+            this.btnEdit.Text = "Edit";
+            this.btnEdit.UseCompatibleTextRendering = true;
+            this.btnEdit.UseVisualStyleBackColor = true;
             // 
             // btnClearPrediction
             // 
@@ -380,7 +381,7 @@
             this.Controls.Add(this.lblResultsOverview);
             this.Controls.Add(this.btnLogOut);
             this.Controls.Add(this.btnClearPrediction);
-            this.Controls.Add(this.btnEditPrediction);
+            this.Controls.Add(this.btnEdit);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "btnClear";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -393,7 +394,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnEditPrediction;
+        private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnClearPrediction;
         private System.Windows.Forms.Button btnLogOut;
         private System.Windows.Forms.Label lblResultsOverview;

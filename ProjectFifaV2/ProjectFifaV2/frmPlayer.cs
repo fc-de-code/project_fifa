@@ -26,7 +26,7 @@ namespace ProjectFifaV2
             InitializeComponent();
             if (DisableEditButton())
             {
-                btnEditPrediction.Enabled = false;
+                btnEdit.Enabled = false;
             }
             ShowResults();
             ShowScoreCard();
