@@ -128,5 +128,10 @@ namespace ProjectFifaV2
                 MessageHandler.ShowMessage("Wrong username and/or password.");
             }
         }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
