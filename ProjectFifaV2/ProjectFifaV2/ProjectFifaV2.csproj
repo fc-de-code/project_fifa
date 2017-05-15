@@ -89,6 +89,9 @@
     <Compile Include="frmPlayer.designer.cs">
       <DependentUpon>frmPlayer.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPlayer1.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmRanking.cs">
       <SubType>Form</SubType>
     </Compile>

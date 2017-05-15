@@ -11,6 +11,7 @@ namespace ProjectFifaV2
         {
             this.frmRanking = frmRanking;
             this.username = username;
+           
         }
     }
 }
