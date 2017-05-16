@@ -13,7 +13,7 @@
     <div class="loginwindow">
       <div class="loginheader">
         <h3>login</h3>
-        <span class="close">&times;</span>
+        <span class="login-close">&times;</span>
       </div>
       <form action="../app/loginmanager.php" method="post">
         <label for="username">Username</label>
@@ -24,5 +24,5 @@
       </form>
     </div>
   </div>
-  <script src="js/loginpopup.js"></script>
+
 </nav>

@@ -1,8 +1,8 @@
-<div class="team-add">
+<div id="team-add" class="team-add">
   <div class="teamAddWindow">
     <div class="teamAddHeader">
       <h3>Add Team</h3>
-      <span class="close">&times;</span>
+      <span class="teamadd-close">&times;</span>
     </div>
     <form action="../app/addTeam.php" method="post">
       <label for="team">Team Name:</label>
