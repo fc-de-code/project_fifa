@@ -1,6 +1,5 @@
 <?php require(realpath(__DIR__) . '/templates/header.php'); ?>
 
-
     <div class="main-content">
       <div class="hero">
         <div class="wrapper">

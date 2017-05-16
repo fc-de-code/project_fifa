@@ -7,6 +7,12 @@
         </div>
       </div>
     <?php require(realpath(__DIR__) . '/templates/navigatie.php'); ?>
+        <?php
+            if ($_SESSION['admin'])
+            {
+
+            }
+        ?>
 
     <?php require(realpath(__DIR__) . '/templates/footer-content.php'); ?>
 

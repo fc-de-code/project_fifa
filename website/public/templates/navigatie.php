@@ -15,9 +15,9 @@
         <h3>login</h3>
         <span class="close">&times;</span>
       </div>
-      <form action="../loginmanager.php" method="post">
-        <label for="Username">Username</label>
-        <input type="text" placeholder="Enter Username" name="Username" id="username" required>
+      <form action="../app/loginmanager.php" method="post">
+        <label for="username">Username</label>
+        <input type="text" placeholder="Enter Username" name="username" id="username" required>
         <label for="password">Password</label>
         <input type="password" placeholder="Enter Password" name="password" id="password" required>
         <button type="submit" value="Submit">Login</button>
