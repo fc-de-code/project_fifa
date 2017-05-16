@@ -31,8 +31,20 @@ namespace ProjectFifaV2
             ShowResults();
             ShowScoreCard();
             this.Text = "Welcome " + un;
-        }
 
+            // sql hier ophalen teamnames uit database voor
+            // comboteam1
+            //comboteam2
+            //ophalen uit database teams tegen andere teams 
+            // in lvoverview
+
+
+
+
+
+
+        }
+       
         private void btnLogOut_Click(object sender, EventArgs e)
         {
             Hide();
@@ -182,6 +194,11 @@ namespace ProjectFifaV2
         private void lvOverview_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnBet_Click(object sender, EventArgs e)
+        {
+            //sql insert bet into prediction 
         }
     }
 }

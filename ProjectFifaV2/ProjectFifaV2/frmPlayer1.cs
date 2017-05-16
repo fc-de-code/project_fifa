@@ -13,5 +13,19 @@ namespace ProjectFifaV2
             this.username = username;
            
         }
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // frmPlayer
+            // 
+            this.ClientSize = new System.Drawing.Size(282, 253);
+            this.Name = "frmPlayer";
+            this.Text = "TEEEEST";
+            this.ResumeLayout(false);
+            
+
+        }
     }
 }

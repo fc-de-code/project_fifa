@@ -35,6 +35,8 @@
             this.btnExecute = new System.Windows.Forms.Button();
             this.dgvAdminData = new System.Windows.Forms.DataGridView();
             this.btnAdminLogOut = new System.Windows.Forms.Button();
+            this.btnPlayer = new System.Windows.Forms.Button();
+            this.btnRanking = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAdminData)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,7 +111,7 @@
             this.dgvAdminData.Location = new System.Drawing.Point(16, 250);
             this.dgvAdminData.Margin = new System.Windows.Forms.Padding(4);
             this.dgvAdminData.Name = "dgvAdminData";
-            this.dgvAdminData.Size = new System.Drawing.Size(1061, 285);
+            this.dgvAdminData.Size = new System.Drawing.Size(858, 285);
             this.dgvAdminData.TabIndex = 6;
             // 
             // btnAdminLogOut
@@ -117,7 +119,7 @@
             this.btnAdminLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdminLogOut.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdminLogOut.ForeColor = System.Drawing.Color.DarkGray;
-            this.btnAdminLogOut.Location = new System.Drawing.Point(936, 41);
+            this.btnAdminLogOut.Location = new System.Drawing.Point(947, 34);
             this.btnAdminLogOut.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdminLogOut.Name = "btnAdminLogOut";
             this.btnAdminLogOut.Size = new System.Drawing.Size(141, 49);
@@ -126,12 +128,40 @@
             this.btnAdminLogOut.UseVisualStyleBackColor = true;
             this.btnAdminLogOut.Click += new System.EventHandler(this.btnAdminLogOut_Click);
             // 
+            // btnPlayer
+            // 
+            this.btnPlayer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPlayer.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlayer.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnPlayer.Location = new System.Drawing.Point(947, 233);
+            this.btnPlayer.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPlayer.Name = "btnPlayer";
+            this.btnPlayer.Size = new System.Drawing.Size(141, 49);
+            this.btnPlayer.TabIndex = 9;
+            this.btnPlayer.Text = "Player";
+            this.btnPlayer.UseVisualStyleBackColor = true;
+            // 
+            // btnRanking
+            // 
+            this.btnRanking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRanking.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRanking.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnRanking.Location = new System.Drawing.Point(947, 137);
+            this.btnRanking.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRanking.Name = "btnRanking";
+            this.btnRanking.Size = new System.Drawing.Size(141, 43);
+            this.btnRanking.TabIndex = 8;
+            this.btnRanking.Text = "Rangking";
+            this.btnRanking.UseVisualStyleBackColor = true;
+            // 
             // frmAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(28)))));
             this.ClientSize = new System.Drawing.Size(1101, 571);
+            this.Controls.Add(this.btnPlayer);
+            this.Controls.Add(this.btnRanking);
             this.Controls.Add(this.btnAdminLogOut);
             this.Controls.Add(this.dgvAdminData);
             this.Controls.Add(this.btnExecute);
@@ -158,5 +188,7 @@
         private System.Windows.Forms.Button btnExecute;
         private System.Windows.Forms.DataGridView dgvAdminData;
         private System.Windows.Forms.Button btnAdminLogOut;
+        private System.Windows.Forms.Button btnRanking;
+        private System.Windows.Forms.Button btnPlayer;
     }
 }
