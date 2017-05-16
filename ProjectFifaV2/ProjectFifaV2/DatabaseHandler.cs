@@ -14,8 +14,8 @@ namespace ProjectFifaV2
 
         public DatabaseHandler()
         {
-            //SqlCeEngine engine = new SqlCeEngine(@"Data Source=.\DB.sdf");
-            //engine.Upgrade(@"Data Source=.\DB2.sdf");
+            //SqlCeEngine engine = new SqlCeEngine(@"Data Source=.\DB.mdf");
+            //engine.Upgrade(@"Data Source=.\DB2.sf");
 
 
             string Path = Environment.CurrentDirectory;
