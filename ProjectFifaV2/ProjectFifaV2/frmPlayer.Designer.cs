@@ -249,6 +249,7 @@
             this.btnBet.TabIndex = 20;
             this.btnBet.Text = "Bet";
             this.btnBet.UseVisualStyleBackColor = true;
+            this.btnBet.Click += new System.EventHandler(this.btnBet_Click);
             // 
             // label3
             // 

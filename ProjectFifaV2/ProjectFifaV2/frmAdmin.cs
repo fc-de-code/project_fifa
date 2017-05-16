@@ -110,5 +110,12 @@ namespace ProjectFifaV2
                 return false;
             }
         }
+
+        
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

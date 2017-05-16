@@ -17,6 +17,8 @@ namespace ProjectFifaV2
         private Form frmPlayer;
         private Form frmRanking;
 
+        private Form test;
+
         public frmLogin()
         {
             InitializeComponent();
@@ -117,8 +119,13 @@ namespace ProjectFifaV2
                 }
                 else
                 {
-                    frmPlayer = new frmPlayer(frmRanking, username);
-                    frmPlayer.Show();
+                    
+                    test = new btnClear(frmRanking,username);
+                    test.Show();
+
+                    //caution broken
+                   // frmPlayer = new frmPlayer(frmRanking, username);
+                   // frmPlayer.Show();
                     //frmPlayer.Show();
                 }
             }
