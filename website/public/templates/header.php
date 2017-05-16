@@ -1,5 +1,4 @@
 <!--This header is just a suggestion. Do whatever you want with it!-->
-<?php session_start()?>
 <!doctype html>
 <html lang="en">
 <head>

@@ -232,6 +232,37 @@ nav .navigation a:hover {
   list-style: none;
 }
 
+.teams {
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.teamadd-button {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 10%;
+  border: 5px double #3a3a3a;
+  border-radius: 19px;
+  padding: 10px;
+}
+
+.teamadd-button h3 {
+  font-size: 1.5em;
+}
+
+.teamadd-button span {
+  font-size: 5em;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.teamadd-button:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+}
+
 footer {
   margin-top: 80px;
   border-top: 5px double #3a3a3a;
