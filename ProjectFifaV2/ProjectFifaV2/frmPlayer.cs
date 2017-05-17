@@ -6,6 +6,9 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using MySql.Data;
+using MySql.Data.MySqlClient;
 
 namespace ProjectFifaV2
 {
@@ -14,7 +17,10 @@ namespace ProjectFifaV2
         private Form frmRanking;
         private DatabaseHandler dbh;
         private string userName;
+        private SqlConnection con;
+        private DatabaseHandler database;
 
+        List<string> combo;
         List<TextBox> txtBoxList;
 
         public btnClear(Form frm, string un)
@@ -33,6 +39,37 @@ namespace ProjectFifaV2
             this.Text = "Welcome " + un;
 
             // sql hier ophalen teamnames uit database voor
+            int teamId = 0;
+
+           
+
+
+            string query = "SELECT * FROM tbl_teams";
+            string teams = "teams";
+
+
+            string jurriaan = "SELECT * FROM tbl_users";
+
+            DataTable dt = dbh.select(jurriaan,teams);
+            for (int i = 0; i < dt.Rows.Count; i ++)
+            {
+                DataRow team = dt.Rows[i];
+                comboTeam1.Items.Add(team["username"].ToString());
+
+            }
+           
+
+
+
+          
+            
+
+            
+
+
+
+
+
             // comboteam1
             //comboteam2
             //ophalen uit database teams tegen andere teams 
@@ -199,6 +236,12 @@ namespace ProjectFifaV2
         private void btnBet_Click(object sender, EventArgs e)
         {
             //sql insert bet into prediction 
+
+        }
+
+        private void comboTeam2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

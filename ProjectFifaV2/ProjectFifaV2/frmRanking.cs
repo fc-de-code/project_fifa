@@ -56,5 +56,10 @@ namespace ProjectFifaV2
         {
 
         }
+
+        private void lvRanking_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

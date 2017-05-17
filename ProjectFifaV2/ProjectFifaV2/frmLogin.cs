@@ -104,7 +104,7 @@ namespace ProjectFifaV2
             }           
 
             if (exist)
-            {
+         {
                 bool admin;
                 using (SqlCommand cmd = new SqlCommand("SELECT COUNT(*) from [tblUsers] WHERE Username = @Username AND IsAdmin = 1", dbh.GetCon()))
                 {

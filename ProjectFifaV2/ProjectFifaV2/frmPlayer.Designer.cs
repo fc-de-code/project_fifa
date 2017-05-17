@@ -165,6 +165,7 @@
             this.comboTeam2.Name = "comboTeam2";
             this.comboTeam2.Size = new System.Drawing.Size(160, 23);
             this.comboTeam2.TabIndex = 12;
+            this.comboTeam2.SelectedIndexChanged += new System.EventHandler(this.comboTeam2_SelectedIndexChanged);
             // 
             // txtScoreTeam1
             // 
