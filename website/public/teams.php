@@ -7,8 +7,17 @@
         </div>
       </div>
     <?php require(realpath(__DIR__) . '/templates/navigatie.php'); ?>
-
-    <?php require(realpath(__DIR__) . '/templates/footer-content.php'); ?>
-
+    <div class="wrapper">
+      <div id="open-modal" class="teams">
+        <div class="teamadd-button">
+          <h3>Add-Team</h3>
+          <span>+</span>
+        </div>
+      </div>
     </div>
+    <?php require(realpath(__DIR__) . '/templates/team-add.php'); ?>
+    <?php require(realpath(__DIR__) . '/templates/footer-content.php'); ?>
+    </div>
+
 <?php require(realpath(__DIR__) . '/templates/footer.php');
+//bycrypt

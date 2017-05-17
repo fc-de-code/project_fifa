@@ -38,7 +38,7 @@
             this.clmScoren = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmSaldo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmRanking = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.btnWedstrijd = new System.Windows.Forms.Button();
+            this.btnMatch = new System.Windows.Forms.Button();
             this.btnAdmins = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -47,19 +47,19 @@
             this.btnLoguit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(28)))));
             this.btnLoguit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLoguit.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoguit.ForeColor = System.Drawing.Color.White;
+            this.btnLoguit.ForeColor = System.Drawing.Color.DarkGray;
             this.btnLoguit.Location = new System.Drawing.Point(535, 580);
             this.btnLoguit.Margin = new System.Windows.Forms.Padding(5);
             this.btnLoguit.Name = "btnLoguit";
             this.btnLoguit.Size = new System.Drawing.Size(126, 47);
             this.btnLoguit.TabIndex = 1;
-            this.btnLoguit.Text = "Loguit";
+            this.btnLoguit.Text = "Logout";
             this.btnLoguit.UseVisualStyleBackColor = false;
             this.btnLoguit.Click += new System.EventHandler(this.btnRankingBack_Click);
             // 
             // lvRanking
             // 
-            this.lvRanking.BackColor = System.Drawing.Color.Silver;
+            this.lvRanking.BackColor = System.Drawing.Color.Gray;
             this.lvRanking.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lvRanking.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.clmRank,
@@ -94,7 +94,7 @@
             this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.listView1.BackColor = System.Drawing.Color.Silver;
+            this.listView1.BackColor = System.Drawing.Color.Gray;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.clmTeam,
             this.clmScoren,
@@ -131,27 +131,27 @@
             this.clmRanking.Text = "Ranking";
             this.clmRanking.Width = 77;
             // 
-            // btnWedstrijd
+            // btnMatch
             // 
-            this.btnWedstrijd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(28)))));
-            this.btnWedstrijd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnWedstrijd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnWedstrijd.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWedstrijd.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnWedstrijd.Location = new System.Drawing.Point(535, 244);
-            this.btnWedstrijd.Margin = new System.Windows.Forms.Padding(5);
-            this.btnWedstrijd.Name = "btnWedstrijd";
-            this.btnWedstrijd.Size = new System.Drawing.Size(126, 47);
-            this.btnWedstrijd.TabIndex = 4;
-            this.btnWedstrijd.Text = "Wedstrijd";
-            this.btnWedstrijd.UseVisualStyleBackColor = false;
+            this.btnMatch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(28)))));
+            this.btnMatch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnMatch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMatch.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMatch.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnMatch.Location = new System.Drawing.Point(535, 244);
+            this.btnMatch.Margin = new System.Windows.Forms.Padding(5);
+            this.btnMatch.Name = "btnMatch";
+            this.btnMatch.Size = new System.Drawing.Size(126, 47);
+            this.btnMatch.TabIndex = 4;
+            this.btnMatch.Text = "Match";
+            this.btnMatch.UseVisualStyleBackColor = false;
             // 
             // btnAdmins
             // 
             this.btnAdmins.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(28)))));
             this.btnAdmins.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdmins.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdmins.ForeColor = System.Drawing.Color.White;
+            this.btnAdmins.ForeColor = System.Drawing.Color.DarkGray;
             this.btnAdmins.Location = new System.Drawing.Point(535, 419);
             this.btnAdmins.Margin = new System.Windows.Forms.Padding(5);
             this.btnAdmins.Name = "btnAdmins";
@@ -162,12 +162,12 @@
             // 
             // frmRanking
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(28)))));
-            this.ClientSize = new System.Drawing.Size(1248, 1045);
+            this.ClientSize = new System.Drawing.Size(1248, 1037);
             this.Controls.Add(this.btnAdmins);
-            this.Controls.Add(this.btnWedstrijd);
+            this.Controls.Add(this.btnMatch);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.lvRanking);
             this.Controls.Add(this.btnLoguit);
@@ -196,7 +196,7 @@
         private System.Windows.Forms.ColumnHeader clmScoren;
         private System.Windows.Forms.ColumnHeader clmSaldo;
         private System.Windows.Forms.ColumnHeader clmRanking;
-        private System.Windows.Forms.Button btnWedstrijd;
+        private System.Windows.Forms.Button btnMatch;
         private System.Windows.Forms.Button btnAdmins;
     }
 }

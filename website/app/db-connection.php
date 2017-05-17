@@ -1,32 +1,28 @@
 <?php
-class connection
+
+class database
 {
-  protected $connection_db_link;
-  public $db_user = 'root';
-  public $db_host = 'localhost';
-  public $db_name = 'project_fifa';
-  public $db_pass = '';
+  protected $db;
+  private $host;
+  private $dbname;
+  private $username;
+  private $password;
 
-  function db_connect()
+  public function __construct($host, $dbname, $username, $password)
   {
-    try {
-      $this->connection_db_link = new PDO("mysql:host=$this->db_host;$this->db_name",$this->db_user,$this->db_pass);
-      $this->connection_db_link->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-      return $this->connection_db_link;
-    } catch (Exception $e) {
-      echo $e->getMessage();
-    }
-
+    $this->host= $host;
+    $this->dbname = $dbname;
+    $this->username = $username;
+    $this->password = $password;
   }
-  function display_connection()
+
+  public function connect()
   {
-    if ($this->connection_db_link == true)
+    if (!$this->db)
     {
-      echo 'connection succes';
+      $this->db = new PDO('mysql:host=' . $this->host . ';dbname=' . $this->dbname, $this->username, $this->password);
     }
+    return $this->db;
   }
 }
-$users = new connection;
-$users->db_connect();
-$users->display_connection();
- ?>
+

@@ -143,14 +143,14 @@ nav .navigation a:hover {
   margin-left: 20px;
 }
 
-.login .loginwindow .loginheader .close {
+.login .loginwindow .loginheader .login-close {
   margin-right: 20px;
   color: #fff;
   font-size: 40px;
   font-weight: bold;
 }
 
-.login .loginwindow .loginheader .close:hover {
+.login .loginwindow .loginheader .login-close:hover {
   color: black;
   text-decoration: none;
   cursor: pointer;
@@ -230,6 +230,87 @@ nav .navigation a:hover {
 .team-score .wrapper .team-list li {
   text-align: center;
   list-style: none;
+}
+
+.teams {
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.teamadd-button {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 10%;
+  border: 5px double #3a3a3a;
+  border-radius: 19px;
+  padding: 10px;
+}
+
+.teamadd-button h3 {
+  font-size: 1.5em;
+}
+
+.teamadd-button span {
+  font-size: 5em;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.teamadd-button:hover {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.team-add {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.team-add .teamAddWindow {
+  display: flex;
+  background-color: white;
+  margin: auto;
+  width: 25%;
+  border-radius: 20px;
+  flex-direction: column;
+}
+
+.team-add .teamAddWindow .teamAddHeader {
+  display: flex;
+  flex-direction: row;
+  background-color: #fc9b00;
+  justify-content: space-between;
+  border-radius: 19px 19px 0px 0px;
+}
+
+.team-add .teamAddWindow .teamAddHeader h3 {
+  align-self: center;
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.team-add .teamAddWindow .teamAddHeader .teamadd-close {
+  margin-right: 20px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.team-add .teamAddWindow .teamAddHeader .teamadd-close:hover {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 footer {

@@ -1,7 +1,6 @@
 <?php
-namespace App;
 session_start();
-require_once("Data-validator.php");
+require 'init.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'GET')
 {
@@ -9,10 +8,29 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET')
     header("location: ../public/index.php");
 }
 
-$username = $_POST["username"];
-$password = $_POST["password"];
-$DataComparer = new DataComparer($username, $password);
-$DataComparer->Compare();
+$username = $_POST['username'];
+$password = $_POST['password'];
+$DataValidator = new DataValidator($db);
 
-header("location: ../public/index.php")
-?>
+$user = $DataValidator->LoginValidator($username, $password);
+
+if ($user)
+{
+    if ($DataValidator->IsAdmin($user))
+    {
+        $_SESSION['admin'] = true;
+    }
+    else
+    {
+        $_SESSION['admin'] = false;
+    }
+
+    $_SESSION['user'] = $user['user'];
+}
+else
+{
+    $msg = 'JOUW MOEDER HEEFT KK EN JOUW PASSWORD IS SLECHT EN JOUW NAAM IS NOCH SLECHTER';
+}
+
+
+header("location: ../public/index.php?msg=$msg");

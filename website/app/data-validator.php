@@ -1,46 +1,41 @@
 <?php
-namespace App;
-require_once 'db-Connection.php';
 
-class DataComparer
+require 'init.php';
+
+class DataValidator
 {
-  private $username;
-  private $password;
-  private $dbc;
+    private $db;
 
-  function __Construct($username, $password)
-  {
-      $this->dbc = db_connect();
-      $this->username = $username;
-      $this->password = $password;
-  }
+    public function __Construct($db)
+    {
+        $this->db = $db;
+    }
 
-  function Compare()
-  {
-      $stmt = $this->dbc->prepare("SELECT * FROM `tbl_users` WHERE `username` =:username LIMIT 1");
-      $stmt->execute(array(':username'=>$this->username));
-      $userRow=$stmt->fetch(\PDO::FETCH_ASSOC);
+    public function LoginValidator($username, $password)
+    {
+        $sql = "SELECT * FROM `tbl_users` WHERE `user` = '$username' AND `password` = '$password'";
+        $user = $this->db->query($sql)->fetch(PDO::FETCH_ASSOC);
+        if($user)
+        {
+            return $user;
+        }
 
-      if($stmt->rowCount() > 0)
-      {
-          if(password_verify($this->password, $userRow['password']))
-          {
-              $_SESSION["error"] =  "Succesfully logged in.";
-              $_SESSION["logged"] = true;
-          }
-          else
-          {
-              $_SESSION["error"] =  "Password is incorrect.";
-              $_SESSION["logged"] = false;
-          }
-      }
-      else
-      {
-          $_SESSION["error"] =  "username not found.";
-          $_SESSION["logged"] = false;
-      }
-  }
+        return false;
+    }
+
+    public function IsAdmin($user)
+    {
+        if ($user == false)
+        {
+            return false;
+        }
+        if ($user['admin'] == 1)
+        {
+            return true;
+        }
+    }
+
+
+
 }
 
-
-?>
