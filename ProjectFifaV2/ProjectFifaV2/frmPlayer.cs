@@ -12,7 +12,7 @@ using MySql.Data.MySqlClient;
 
 namespace ProjectFifaV2
 {
-    public partial class btnClear : Form
+    public partial class frmPlayer : Form
     {
         private Form frmRanking;
         private DatabaseHandler dbh;
@@ -23,7 +23,7 @@ namespace ProjectFifaV2
         List<string> combo;
         List<TextBox> txtBoxList;
 
-        public btnClear(Form frm, string un)
+        public frmPlayer(Form frm, string un)
         {
             this.ControlBox = false;
             frmRanking = frm;

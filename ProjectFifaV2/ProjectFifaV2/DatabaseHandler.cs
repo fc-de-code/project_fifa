@@ -62,12 +62,12 @@ namespace ProjectFifaV2
         public bool IsConnect()
         {
             bool result = true;
-            if (connection == null)
+            if (connection == null || connection.State == ConnectionState.Closed)
             {
-                if (string.IsNullOrEmpty(database))
-                    result = false;
-                //string constring = string.Format("Server=jpslimmen.ddns.net; database=project_fifa; UID=root;password=welkom1",database);
-                connection = new MySqlConnection(GetConfig());
+                //if (string.IsNullOrEmpty(database))
+                //    result = false;
+                string constring = string.Format("Server=localhost; database=project_fifa; UID=root; password=");
+                connection = new MySqlConnection(constring);
                 connection.Open();
                 result = true;
             }
@@ -145,7 +145,7 @@ namespace ProjectFifaV2
             
             try
             {
-                con.Open();
+                IsConnect();
             }
             catch (Exception ex)
             {
@@ -153,11 +153,11 @@ namespace ProjectFifaV2
             }
             finally
             {
-                if (con.State == System.Data.ConnectionState.Open)
+                if (connection.State == System.Data.ConnectionState.Open)
                 {
                     open = true;
                 }
-                con.Close();
+                Close();
             }
 
             if (!open)
@@ -168,12 +168,16 @@ namespace ProjectFifaV2
 
         public void OpenConnectionToDB()
         {
-            con.Open();
+            if (connection.State == ConnectionState.Closed || connection == null)
+            {
+                IsConnect();
+            }
         }
 
         public void CloseConnectionToDB()
         {
-            con.Close();
+            if (connection.State == ConnectionState.Open)
+                Close();
         }
 
         public System.Data.DataTable FillDT(string query)

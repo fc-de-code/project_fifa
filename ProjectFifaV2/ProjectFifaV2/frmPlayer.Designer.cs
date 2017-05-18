@@ -1,6 +1,6 @@
 ﻿namespace ProjectFifaV2
 {
-    partial class btnClear
+    partial class frmPlayer
     {
         /// <summary>
         /// Required designer variable.
@@ -358,7 +358,7 @@
             this.lblPoints.TabIndex = 29;
             this.lblPoints.Text = "Your point amount";
             // 
-            // btnClear
+            // frmPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -389,7 +389,7 @@
             this.Controls.Add(this.btnClearPrediction);
             this.Controls.Add(this.btnEdit);
             this.Margin = new System.Windows.Forms.Padding(5);
-            this.Name = "btnClear";
+            this.Name = "frmPlayer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PlayerName";
             this.Load += new System.EventHandler(this.frmPlayer_Load);

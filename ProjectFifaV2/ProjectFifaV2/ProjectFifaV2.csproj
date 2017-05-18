@@ -105,9 +105,6 @@
     <Compile Include="frmPlayer.designer.cs">
       <DependentUpon>frmPlayer.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPlayer1.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="frmRanking.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,9 +122,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPlayer.resx">
       <DependentUpon>frmPlayer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmPlayer1.resx">
-      <DependentUpon>frmPlayer1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRanking.resx">
       <DependentUpon>frmRanking.cs</DependentUpon>
