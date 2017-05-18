@@ -37,7 +37,7 @@ namespace ProjectFifaV2
             ShowResults();
             ShowScoreCard();
             this.Text = "Welcome " + un;
-
+            lblname.Text = un;
             // sql hier ophalen teamnames uit database voor
             int teamId = 0;
 
@@ -48,23 +48,28 @@ namespace ProjectFifaV2
             string teams = "teams";
 
 
-            string jurriaan = "SELECT * FROM tbl_users";
+            string jurriaan = "SELECT * FROM tbl_teams";
 
             DataTable dt = dbh.select(jurriaan,teams);
             for (int i = 0; i < dt.Rows.Count; i ++)
             {
                 DataRow team = dt.Rows[i];
-                comboTeam1.Items.Add(team["username"].ToString());
+                comboTeam1.Items.Add(team["name"].ToString());
 
             }
-           
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                DataRow team = dt.Rows[i];
+                comboTeam2.Items.Add(team["name"].ToString());
+
+            }
 
 
 
-          
-            
 
-            
+
+
+
 
 
 
