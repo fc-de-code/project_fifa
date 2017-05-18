@@ -54,6 +54,7 @@
             this.clmTeamSaldo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lblPoints = new System.Windows.Forms.Label();
             this.lblname = new System.Windows.Forms.Label();
+            this.lbltest = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnEdit
@@ -355,6 +356,16 @@
             this.lblname.Size = new System.Drawing.Size(0, 29);
             this.lblname.TabIndex = 30;
             // 
+            // lbltest
+            // 
+            this.lbltest.AutoSize = true;
+            this.lbltest.ForeColor = System.Drawing.Color.Red;
+            this.lbltest.Location = new System.Drawing.Point(292, 290);
+            this.lbltest.Name = "lbltest";
+            this.lbltest.Size = new System.Drawing.Size(46, 17);
+            this.lbltest.TabIndex = 31;
+            this.lbltest.Text = "label1";
+            // 
             // frmPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -362,6 +373,7 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(28)))));
             this.ClientSize = new System.Drawing.Size(1071, 718);
+            this.Controls.Add(this.lbltest);
             this.Controls.Add(this.lblname);
             this.Controls.Add(this.lblPoints);
             this.Controls.Add(this.label9);
@@ -423,6 +435,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label lblPoints;
         private System.Windows.Forms.Label lblname;
+        private System.Windows.Forms.Label lbltest;
     }
 }
 

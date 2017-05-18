@@ -12,3 +12,9 @@ C:\Users\jean-pierre\Desktop\sql\sql\obj\Debug\sql.pdb
 C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\applicatie\sql voorbeeld\sql\bin\Debug\sql.exe.config
 C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\applicatie\sql voorbeeld\sql\obj\Debug\sql.exe
 C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\applicatie\sql voorbeeld\sql\obj\Debug\sql.pdb
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\applicatie\sql voorbeeld\sql\bin\Debug\sql.exe
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\applicatie\sql voorbeeld\sql\bin\Debug\sql.pdb
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\applicatie\sql voorbeeld\sql\obj\Debug\sql.csprojResolveAssemblyReference.cache
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\applicatie\sql voorbeeld\sql\obj\Debug\sql.Form1.resources
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\applicatie\sql voorbeeld\sql\obj\Debug\sql.Properties.Resources.resources
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\applicatie\sql voorbeeld\sql\obj\Debug\sql.csproj.GenerateResource.Cache

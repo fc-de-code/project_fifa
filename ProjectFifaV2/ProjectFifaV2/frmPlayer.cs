@@ -242,6 +242,23 @@ namespace ProjectFifaV2
         {
             //sql insert bet into prediction 
 
+            // 4 varible
+
+            string teamName1 = comboTeam1.SelectedItem.ToString();
+            string teamNaam2 = comboTeam2.SelectedItem.ToString();
+
+
+            int beat1 = Convert.ToInt32(txtScoreTeam1.Text);
+            int beat2 = Convert.ToInt32(txtScoreTeam2.Text);
+
+            lbltest.Text = beat1.ToString() + beat2.ToString() ;
+
+            /// Insuert van de test gebruiken
+            MySqlCommand command = connection.CreateCommand();
+
+            command.CommandText = "INSERT INTO tbl_users score valus ('beat1'),('beat2')"; 
+
+
         }
 
         private void comboTeam2_SelectedIndexChanged(object sender, EventArgs e)

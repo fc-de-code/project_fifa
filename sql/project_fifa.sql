@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.4.7
--- http://www.phpmyadmin.net
+-- version 4.6.4
+-- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Gegenereerd op: 18 mei 2017 om 09:10
--- Serverversie: 5.5.47-MariaDB
--- PHP-versie: 5.5.31
+-- Host: 127.0.0.1
+-- Gegenereerd op: 18 mei 2017 om 09:38
+-- Serverversie: 5.7.14
+-- PHP-versie: 5.6.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -14,7 +14,7 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
 -- Database: `project_fifa`
@@ -26,14 +26,14 @@ SET time_zone = "+00:00";
 -- Tabelstructuur voor tabel `tbl_matches`
 --
 
-CREATE TABLE IF NOT EXISTS `tbl_matches` (
-  `id` int(10) unsigned NOT NULL,
-  `team_id_a` int(10) unsigned NOT NULL,
-  `team_id_b` int(10) unsigned NOT NULL,
-  `score_team_a` int(10) unsigned DEFAULT NULL,
-  `score_team_b` int(10) unsigned DEFAULT NULL,
+CREATE TABLE `tbl_matches` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `team_id_a` int(10) UNSIGNED NOT NULL,
+  `team_id_b` int(10) UNSIGNED NOT NULL,
+  `score_team_a` int(10) UNSIGNED DEFAULT NULL,
+  `score_team_b` int(10) UNSIGNED DEFAULT NULL,
   `start_time` datetime NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=COMPACT;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `tbl_matches`
@@ -49,15 +49,15 @@ INSERT INTO `tbl_matches` (`id`, `team_id_a`, `team_id_b`, `score_team_a`, `scor
 -- Tabelstructuur voor tabel `tbl_players`
 --
 
-CREATE TABLE IF NOT EXISTS `tbl_players` (
-  `id` int(11) unsigned NOT NULL,
+CREATE TABLE `tbl_players` (
+  `id` int(11) UNSIGNED NOT NULL,
   `student_id` varchar(10) NOT NULL,
-  `team_id` int(11) unsigned NOT NULL,
+  `team_id` int(11) UNSIGNED NOT NULL,
   `first_name` varchar(255) NOT NULL,
   `last_name` varchar(255) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `deleted_at` datetime DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `tbl_players`
@@ -79,12 +79,12 @@ INSERT INTO `tbl_players` (`id`, `student_id`, `team_id`, `first_name`, `last_na
 -- Tabelstructuur voor tabel `tbl_poules`
 --
 
-CREATE TABLE IF NOT EXISTS `tbl_poules` (
+CREATE TABLE `tbl_poules` (
   `id` int(11) NOT NULL,
   `naam` varchar(10) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `deleted_at` datetime DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `tbl_poules`
@@ -102,13 +102,13 @@ INSERT INTO `tbl_poules` (`id`, `naam`, `created_at`, `deleted_at`) VALUES
 -- Tabelstructuur voor tabel `tbl_teams`
 --
 
-CREATE TABLE IF NOT EXISTS `tbl_teams` (
-  `id` int(11) unsigned NOT NULL,
+CREATE TABLE `tbl_teams` (
+  `id` int(11) UNSIGNED NOT NULL,
   `poule_id` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `deleted_at` datetime DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Gegevens worden geëxporteerd voor tabel `tbl_teams`
@@ -117,6 +117,28 @@ CREATE TABLE IF NOT EXISTS `tbl_teams` (
 INSERT INTO `tbl_teams` (`id`, `poule_id`, `name`, `created_at`, `deleted_at`) VALUES
 (1, 1, 'Ajax', '2017-04-13 09:42:45', NULL),
 (2, 1, 'PSV', '2017-04-13 09:42:45', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Tabelstructuur voor tabel `tbl_users`
+--
+
+CREATE TABLE `tbl_users` (
+  `id` int(10) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `isAdmin` tinyint(1) NOT NULL DEFAULT '0',
+  `score` int(10) DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Gegevens worden geëxporteerd voor tabel `tbl_users`
+--
+
+INSERT INTO `tbl_users` (`id`, `username`, `password`, `isAdmin`, `score`) VALUES
+(1, 'admin', 'admin', 1, 0),
+(2, 'test', 'test', 0, 0);
 
 --
 -- Indexen voor geëxporteerde tabellen
@@ -152,6 +174,12 @@ ALTER TABLE `tbl_teams`
   ADD UNIQUE KEY `name` (`name`);
 
 --
+-- Indexen voor tabel `tbl_users`
+--
+ALTER TABLE `tbl_users`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT voor geëxporteerde tabellen
 --
 
@@ -159,22 +187,27 @@ ALTER TABLE `tbl_teams`
 -- AUTO_INCREMENT voor een tabel `tbl_matches`
 --
 ALTER TABLE `tbl_matches`
-  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT voor een tabel `tbl_players`
 --
 ALTER TABLE `tbl_players`
-  MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT voor een tabel `tbl_poules`
 --
 ALTER TABLE `tbl_poules`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT voor een tabel `tbl_teams`
 --
 ALTER TABLE `tbl_teams`
-  MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT voor een tabel `tbl_users`
+--
+ALTER TABLE `tbl_users`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- Beperkingen voor geëxporteerde tabellen
 --
