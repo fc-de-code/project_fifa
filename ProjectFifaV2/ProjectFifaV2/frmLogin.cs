@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
+using MySql.Data.MySqlClient;
 
 namespace ProjectFifaV2
 {
@@ -17,6 +17,8 @@ namespace ProjectFifaV2
         private Form frmAdmin;
         private Form frmPlayer;
         private Form frmRanking;
+
+        private Form test;
 
         public frmLogin()
         {
@@ -94,18 +96,76 @@ namespace ProjectFifaV2
 
             txtUsername.Text = "";
             txtPassword.Text = "";
-
-            using (SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM [tblUsers] WHERE Username = @Username AND Password = @Password", dbh.GetCon()))
+            try
             {
-                cmd.Parameters.AddWithValue("Username", username);
-                cmd.Parameters.AddWithValue("Password", password);
-                exist = (int)cmd.ExecuteScalar() > 0;
-            }           
+                
+                if (dbh.IsConnect())
+                {
 
+                    using (MySqlCommand cmd = new MySqlCommand("SELECT * FROM tbl_users WHERE Username = @Username AND Password = @Password", dbh.Connection))
+                    {
+                        cmd.Parameters.AddWithValue("Username", username);
+                        cmd.Parameters.AddWithValue("Password", password);
+                        //exist = (int)cmd.ExecuteScalar() > 0;
+
+
+                        MySqlDataReader reader = cmd.ExecuteReader();
+                        if (!reader.HasRows)
+                        {
+                            MessageBox.Show("The username and/or password is invalid.");
+
+                            txtUsername.Text = "";
+                            txtPassword.Text = "";
+                            exist = false;
+                        }
+
+                        else
+                        {
+                            exist = true;
+                            reader.Close();
+                        }
+
+
+                    }
+                    if (exist)
+                    {
+                        bool admin = false;
+                        using (MySqlCommand cmd = new MySqlCommand("SELECT * from tbl_users WHERE username = @username AND isAdmin = 1", dbh.Connection))
+                        {
+                            cmd.Parameters.AddWithValue("username", username);
+                            MySqlDataReader reader = cmd.ExecuteReader();
+                            if (!reader.HasRows)
+                            {
+                                admin = false;
+                            }
+                            else
+                            {
+                                admin = true;
+                            }
+                            reader.Close();
+                            if (admin)
+                            {
+                                frmAdmin.Show();
+                            }
+                            else
+                            {
+                                frmPlayer = new frmPlayer(frmRanking, username);
+                                frmPlayer.Show();
+                            }
+                        }
+
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            /*
             if (exist)
-            {
+         {
                 bool admin;
-                using (SqlCommand cmd = new SqlCommand("SELECT COUNT(*) from [tblUsers] WHERE Username = @Username AND IsAdmin = 1", dbh.GetCon()))
+                using (MySqlCommand cmd = new MySqlCommand("SELECT COUNT(*) from [tblUsers] WHERE Username = @Username AND IsAdmin = 1", dbh.Connection))
                 {
                     cmd.Parameters.AddWithValue("Username", username);
                     admin = (int)cmd.ExecuteScalar() > 0;
@@ -118,8 +178,13 @@ namespace ProjectFifaV2
                 }
                 else
                 {
-                    frmPlayer = new frmPlayer(frmRanking, username);
-                    frmPlayer.Show();
+                    
+                    test = new btnClear(frmRanking,username);
+                    test.Show();
+
+                    //caution broken
+                   // frmPlayer = new frmPlayer(frmRanking, username);
+                   // frmPlayer.Show();
                     //frmPlayer.Show();
                 }
             }
@@ -127,12 +192,7 @@ namespace ProjectFifaV2
             {
                 dbh.CloseConnectionToDB();
                 MessageHandler.ShowMessage("Wrong username and/or password.");
-            }
-        }
-
-        private void txtUsername_TextChanged(object sender, EventArgs e)
-        {
-
+            }*/
         }
     }
 }

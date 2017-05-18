@@ -6,18 +6,24 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using MySql.Data;
+using MySql.Data.MySqlClient;
 
 namespace ProjectFifaV2
 {
-    public partial class btnClear : Form
+    public partial class frmPlayer : Form
     {
         private Form frmRanking;
         private DatabaseHandler dbh;
         private string userName;
+        private SqlConnection con;
+        private DatabaseHandler database;
 
+        List<string> combo;
         List<TextBox> txtBoxList;
 
-        public btnClear(Form frm, string un)
+        public frmPlayer(Form frm, string un)
         {
             this.ControlBox = false;
             frmRanking = frm;
@@ -31,8 +37,56 @@ namespace ProjectFifaV2
             ShowResults();
             ShowScoreCard();
             this.Text = "Welcome " + un;
-        }
+            lblname.Text = un;
+            // sql hier ophalen teamnames uit database voor
+            int teamId = 0;
 
+           
+
+
+            string query = "SELECT * FROM tbl_teams";
+            string teams = "teams";
+
+
+            string jurriaan = "SELECT * FROM tbl_teams";
+
+            DataTable dt = dbh.select(jurriaan,teams);
+            for (int i = 0; i < dt.Rows.Count; i ++)
+            {
+                DataRow team = dt.Rows[i];
+                comboTeam1.Items.Add(team["name"].ToString());
+
+            }
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                DataRow team = dt.Rows[i];
+                comboTeam2.Items.Add(team["name"].ToString());
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+            // comboteam1
+            //comboteam2
+            //ophalen uit database teams tegen andere teams 
+            // in lvoverview
+
+
+
+
+
+
+        }
+       
         private void btnLogOut_Click(object sender, EventArgs e)
         {
             Hide();
@@ -180,6 +234,17 @@ namespace ProjectFifaV2
         }
 
         private void lvOverview_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBet_Click(object sender, EventArgs e)
+        {
+            //sql insert bet into prediction 
+
+        }
+
+        private void comboTeam2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

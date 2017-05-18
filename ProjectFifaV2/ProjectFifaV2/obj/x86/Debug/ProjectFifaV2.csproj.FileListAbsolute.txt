@@ -48,8 +48,10 @@ C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2
 C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.csprojResolveAssemblyReference.cache
 C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmAdmin.resources
 C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmLogin.resources
-C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmPlayer.resources
 C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmRanking.resources
 C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.Properties.Resources.resources
 C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.csproj.GenerateResource.Cache
-D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.btnClear.resources
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmPlayer.resources
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\fresh.mdf
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\fresh_log.ldf
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\MySql.Data.dll

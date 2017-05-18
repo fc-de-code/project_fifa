@@ -63,9 +63,9 @@ namespace ProjectFifaV2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap download {
+        internal static System.Drawing.Bitmap _118377 {
             get {
-                object obj = ResourceManager.GetObject("download", resourceCulture);
+                object obj = ResourceManager.GetObject("118377", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace ProjectFifaV2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Football_PNG_Image {
+        internal static System.Drawing.Bitmap _118377__1_ {
             get {
-                object obj = ResourceManager.GetObject("Football-PNG-Image", resourceCulture);
+                object obj = ResourceManager.GetObject("118377 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

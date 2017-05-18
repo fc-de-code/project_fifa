@@ -35,6 +35,8 @@
             this.btnExecute = new System.Windows.Forms.Button();
             this.dgvAdminData = new System.Windows.Forms.DataGridView();
             this.btnAdminLogOut = new System.Windows.Forms.Button();
+            this.btnPlayer = new System.Windows.Forms.Button();
+            this.btnRanking = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAdminData)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,9 +44,9 @@
             // 
             this.btnLoadData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLoadData.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLoadData.ForeColor = System.Drawing.Color.White;
-            this.btnLoadData.Location = new System.Drawing.Point(884, 36);
-            this.btnLoadData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLoadData.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnLoadData.Location = new System.Drawing.Point(766, 41);
+            this.btnLoadData.Margin = new System.Windows.Forms.Padding(4);
             this.btnLoadData.Name = "btnLoadData";
             this.btnLoadData.Size = new System.Drawing.Size(108, 32);
             this.btnLoadData.TabIndex = 0;
@@ -54,21 +56,22 @@
             // 
             // txtPath
             // 
-            this.txtPath.BackColor = System.Drawing.Color.Silver;
-            this.txtPath.Location = new System.Drawing.Point(189, 41);
-            this.txtPath.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPath.BackColor = System.Drawing.Color.DimGray;
+            this.txtPath.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPath.Location = new System.Drawing.Point(132, 41);
+            this.txtPath.Margin = new System.Windows.Forms.Padding(4);
             this.txtPath.MaxLength = 256;
             this.txtPath.Name = "txtPath";
-            this.txtPath.Size = new System.Drawing.Size(685, 22);
+            this.txtPath.Size = new System.Drawing.Size(569, 22);
             this.txtPath.TabIndex = 1;
             // 
             // btnSelectFile
             // 
             this.btnSelectFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSelectFile.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSelectFile.ForeColor = System.Drawing.Color.White;
-            this.btnSelectFile.Location = new System.Drawing.Point(73, 36);
-            this.btnSelectFile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSelectFile.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnSelectFile.Location = new System.Drawing.Point(16, 34);
+            this.btnSelectFile.Margin = new System.Windows.Forms.Padding(4);
             this.btnSelectFile.Name = "btnSelectFile";
             this.btnSelectFile.Size = new System.Drawing.Size(108, 32);
             this.btnSelectFile.TabIndex = 2;
@@ -78,9 +81,10 @@
             // 
             // txtQuery
             // 
-            this.txtQuery.BackColor = System.Drawing.Color.Silver;
-            this.txtQuery.Location = new System.Drawing.Point(73, 171);
-            this.txtQuery.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtQuery.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtQuery.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtQuery.Location = new System.Drawing.Point(16, 114);
+            this.txtQuery.Margin = new System.Windows.Forms.Padding(4);
             this.txtQuery.MaxLength = 150;
             this.txtQuery.Multiline = true;
             this.txtQuery.Name = "txtQuery";
@@ -91,9 +95,9 @@
             // 
             this.btnExecute.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExecute.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExecute.ForeColor = System.Drawing.Color.White;
-            this.btnExecute.Location = new System.Drawing.Point(768, 207);
-            this.btnExecute.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExecute.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnExecute.Location = new System.Drawing.Point(766, 148);
+            this.btnExecute.Margin = new System.Windows.Forms.Padding(4);
             this.btnExecute.Name = "btnExecute";
             this.btnExecute.Size = new System.Drawing.Size(108, 32);
             this.btnExecute.TabIndex = 5;
@@ -104,19 +108,19 @@
             // dgvAdminData
             // 
             this.dgvAdminData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAdminData.Location = new System.Drawing.Point(16, 282);
-            this.dgvAdminData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvAdminData.Location = new System.Drawing.Point(16, 250);
+            this.dgvAdminData.Margin = new System.Windows.Forms.Padding(4);
             this.dgvAdminData.Name = "dgvAdminData";
-            this.dgvAdminData.Size = new System.Drawing.Size(1247, 334);
+            this.dgvAdminData.Size = new System.Drawing.Size(858, 285);
             this.dgvAdminData.TabIndex = 6;
             // 
             // btnAdminLogOut
             // 
             this.btnAdminLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdminLogOut.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdminLogOut.ForeColor = System.Drawing.Color.White;
-            this.btnAdminLogOut.Location = new System.Drawing.Point(1121, 41);
-            this.btnAdminLogOut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAdminLogOut.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnAdminLogOut.Location = new System.Drawing.Point(947, 34);
+            this.btnAdminLogOut.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdminLogOut.Name = "btnAdminLogOut";
             this.btnAdminLogOut.Size = new System.Drawing.Size(141, 49);
             this.btnAdminLogOut.TabIndex = 7;
@@ -124,12 +128,40 @@
             this.btnAdminLogOut.UseVisualStyleBackColor = true;
             this.btnAdminLogOut.Click += new System.EventHandler(this.btnAdminLogOut_Click);
             // 
+            // btnPlayer
+            // 
+            this.btnPlayer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPlayer.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlayer.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnPlayer.Location = new System.Drawing.Point(947, 233);
+            this.btnPlayer.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPlayer.Name = "btnPlayer";
+            this.btnPlayer.Size = new System.Drawing.Size(141, 49);
+            this.btnPlayer.TabIndex = 9;
+            this.btnPlayer.Text = "Player";
+            this.btnPlayer.UseVisualStyleBackColor = true;
+            // 
+            // btnRanking
+            // 
+            this.btnRanking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRanking.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRanking.ForeColor = System.Drawing.Color.DarkGray;
+            this.btnRanking.Location = new System.Drawing.Point(947, 137);
+            this.btnRanking.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRanking.Name = "btnRanking";
+            this.btnRanking.Size = new System.Drawing.Size(141, 43);
+            this.btnRanking.TabIndex = 8;
+            this.btnRanking.Text = "Rangking";
+            this.btnRanking.UseVisualStyleBackColor = true;
+            // 
             // frmAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(28)))));
-            this.ClientSize = new System.Drawing.Size(1279, 630);
+            this.ClientSize = new System.Drawing.Size(1101, 571);
+            this.Controls.Add(this.btnPlayer);
+            this.Controls.Add(this.btnRanking);
             this.Controls.Add(this.btnAdminLogOut);
             this.Controls.Add(this.dgvAdminData);
             this.Controls.Add(this.btnExecute);
@@ -137,7 +169,7 @@
             this.Controls.Add(this.btnSelectFile);
             this.Controls.Add(this.txtPath);
             this.Controls.Add(this.btnLoadData);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin";
@@ -156,5 +188,7 @@
         private System.Windows.Forms.Button btnExecute;
         private System.Windows.Forms.DataGridView dgvAdminData;
         private System.Windows.Forms.Button btnAdminLogOut;
+        private System.Windows.Forms.Button btnRanking;
+        private System.Windows.Forms.Button btnPlayer;
     }
 }
