@@ -8,10 +8,11 @@
       <label for="team">Team Name:</label>
       <input type="text" placeholder="Enter Team Name" name="team" id="team" required>
       <label for="players">PlayerAmount</label>
-      <input type="number" placeholder="Enter Team Size" name="players" id="players" required>
+      <input type="number" value="1" min="1" max="5" name="players" id="players" required>
       <label for="description">Description:</label>
-      <input type="text" size="255" placeholder="enter Description">
+      <textarea type="text" maxlength="255" placeholder="enter Description" name="desciption" rows="8" cols="80"></textarea>
       <button type="submit" value="Submit">Add-Team</button>
     </form>
   </div>
 </div>
+//
