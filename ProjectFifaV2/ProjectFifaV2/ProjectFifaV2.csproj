@@ -49,6 +49,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.9.9\lib\net40\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Web, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Web.6.9.9\lib\net40\MySql.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
@@ -97,9 +105,6 @@
     <Compile Include="frmPlayer.designer.cs">
       <DependentUpon>frmPlayer.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmPlayer1.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="frmRanking.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,9 +122,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPlayer.resx">
       <DependentUpon>frmPlayer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmPlayer1.resx">
-      <DependentUpon>frmPlayer1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRanking.resx">
       <DependentUpon>frmRanking.cs</DependentUpon>
@@ -152,6 +154,7 @@
     <None Include="dbDataSet.xss">
       <DependentUpon>dbDataSet.xsd</DependentUpon>
     </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

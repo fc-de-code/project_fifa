@@ -1,6 +1,6 @@
 ﻿namespace ProjectFifaV2
 {
-    partial class btnClear
+    partial class frmPlayer
     {
         /// <summary>
         /// Required designer variable.
@@ -39,7 +39,6 @@
             this.comboTeam2 = new System.Windows.Forms.ComboBox();
             this.txtScoreTeam1 = new System.Windows.Forms.TextBox();
             this.txtScoreTeam2 = new System.Windows.Forms.TextBox();
-            this.txtName = new System.Windows.Forms.TextBox();
             this.txtBet = new System.Windows.Forms.TextBox();
             this.lblBet = new System.Windows.Forms.Label();
             this.lblNaam = new System.Windows.Forms.Label();
@@ -54,6 +53,7 @@
             this.clmHomeTeamScore = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmTeamSaldo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lblPoints = new System.Windows.Forms.Label();
+            this.lblname = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnEdit
@@ -61,7 +61,7 @@
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEdit.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
             this.btnEdit.ForeColor = System.Drawing.Color.Gray;
-            this.btnEdit.Location = new System.Drawing.Point(36, 417);
+            this.btnEdit.Location = new System.Drawing.Point(392, 333);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(5);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(188, 46);
@@ -112,10 +112,10 @@
             // pnlPredCard
             // 
             this.pnlPredCard.BackColor = System.Drawing.Color.Gainsboro;
-            this.pnlPredCard.Location = new System.Drawing.Point(29, 375);
+            this.pnlPredCard.Location = new System.Drawing.Point(14, 393);
             this.pnlPredCard.Margin = new System.Windows.Forms.Padding(5);
             this.pnlPredCard.Name = "pnlPredCard";
-            this.pnlPredCard.Size = new System.Drawing.Size(550, 255);
+            this.pnlPredCard.Size = new System.Drawing.Size(566, 222);
             this.pnlPredCard.TabIndex = 8;
             // 
             // btnAdmin
@@ -165,6 +165,7 @@
             this.comboTeam2.Name = "comboTeam2";
             this.comboTeam2.Size = new System.Drawing.Size(160, 23);
             this.comboTeam2.TabIndex = 12;
+            this.comboTeam2.SelectedIndexChanged += new System.EventHandler(this.comboTeam2_SelectedIndexChanged);
             // 
             // txtScoreTeam1
             // 
@@ -188,25 +189,12 @@
             this.txtScoreTeam2.Size = new System.Drawing.Size(133, 23);
             this.txtScoreTeam2.TabIndex = 15;
             // 
-            // txtName
-            // 
-            this.txtName.BackColor = System.Drawing.Color.DimGray;
-            this.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtName.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtName.Location = new System.Drawing.Point(161, 36);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4);
-            this.txtName.Multiline = true;
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(127, 27);
-            this.txtName.TabIndex = 16;
-            this.txtName.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
-            // 
             // txtBet
             // 
             this.txtBet.BackColor = System.Drawing.Color.DimGray;
             this.txtBet.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtBet.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBet.Location = new System.Drawing.Point(424, 83);
+            this.txtBet.Location = new System.Drawing.Point(447, 85);
             this.txtBet.Margin = new System.Windows.Forms.Padding(4);
             this.txtBet.Name = "txtBet";
             this.txtBet.Size = new System.Drawing.Size(155, 23);
@@ -351,19 +339,30 @@
             this.lblPoints.AutoSize = true;
             this.lblPoints.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Bold);
             this.lblPoints.ForeColor = System.Drawing.Color.White;
-            this.lblPoints.Location = new System.Drawing.Point(29, 337);
+            this.lblPoints.Location = new System.Drawing.Point(25, 346);
             this.lblPoints.Name = "lblPoints";
             this.lblPoints.Size = new System.Drawing.Size(224, 33);
             this.lblPoints.TabIndex = 29;
             this.lblPoints.Text = "Your point amount";
             // 
-            // btnClear
+            // lblname
+            // 
+            this.lblname.AutoSize = true;
+            this.lblname.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblname.ForeColor = System.Drawing.Color.Silver;
+            this.lblname.Location = new System.Drawing.Point(145, 32);
+            this.lblname.Name = "lblname";
+            this.lblname.Size = new System.Drawing.Size(0, 29);
+            this.lblname.TabIndex = 30;
+            // 
+            // frmPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(28)))));
             this.ClientSize = new System.Drawing.Size(1071, 718);
+            this.Controls.Add(this.lblname);
             this.Controls.Add(this.lblPoints);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
@@ -374,7 +373,6 @@
             this.Controls.Add(this.lblNaam);
             this.Controls.Add(this.lblBet);
             this.Controls.Add(this.txtBet);
-            this.Controls.Add(this.txtName);
             this.Controls.Add(this.txtScoreTeam2);
             this.Controls.Add(this.txtScoreTeam1);
             this.Controls.Add(this.comboTeam2);
@@ -388,7 +386,7 @@
             this.Controls.Add(this.btnClearPrediction);
             this.Controls.Add(this.btnEdit);
             this.Margin = new System.Windows.Forms.Padding(5);
-            this.Name = "btnClear";
+            this.Name = "frmPlayer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PlayerName";
             this.Load += new System.EventHandler(this.frmPlayer_Load);
@@ -414,7 +412,6 @@
         private System.Windows.Forms.ComboBox comboTeam2;
         private System.Windows.Forms.TextBox txtScoreTeam1;
         private System.Windows.Forms.TextBox txtScoreTeam2;
-        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox txtBet;
         private System.Windows.Forms.Label lblBet;
         private System.Windows.Forms.Label lblNaam;
@@ -425,6 +422,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label lblPoints;
+        private System.Windows.Forms.Label lblname;
     }
 }
 

@@ -8,8 +8,8 @@
       </div>
     <?php require(realpath(__DIR__) . '/templates/navigatie.php'); ?>
     <div class="wrapper">
-      <div id="open-modal" class="teams">
-        <div class="teamadd-button">
+      <div class="teams">
+        <div id="open-modal" class="teamadd-button">
           <h3>Add-Team</h3>
           <span>+</span>
         </div>
