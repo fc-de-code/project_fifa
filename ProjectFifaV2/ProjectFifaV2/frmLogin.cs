@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using MySql.Data.MySqlClient;
+using CryptSharp;
 
 namespace ProjectFifaV2
 {
@@ -39,6 +40,90 @@ namespace ProjectFifaV2
             {
                 dbh.TestConnection();
                 dbh.OpenConnectionToDB();
+
+                bool exist = false;
+                string username = txtUsername.Text;
+                string password = txtPassword.Text;
+                
+                txtUsername.Text = "";
+                txtPassword.Text = "";
+                try
+                {
+
+                    if (dbh.IsConnect())
+                    {
+
+                        using (MySqlCommand cmd = new MySqlCommand("SELECT * FROM tbl_users WHERE Username = @Username", dbh.Connection))
+                        {
+                            cmd.Parameters.AddWithValue("Username", username);
+                            //exist = (int)cmd.ExecuteScalar() > 0;
+
+
+                            MySqlDataReader reader = cmd.ExecuteReader();
+                            if (reader.HasRows)
+                            {
+                                MessageBox.Show("The username already exists.");
+
+                                txtUsername.Text = "";
+                                txtPassword.Text = "";
+                                exist = true;
+                                reader.Close();
+                            }
+
+                            else
+                            {
+                                reader.Close();
+                                exist = false;
+                            }
+
+                            
+                        }
+                        if (!exist)
+                        {
+                            password = Crypter.Blowfish.Crypt(password);
+                            using (MySqlCommand cmd = new MySqlCommand("INSERT INTO tbl_users (username, password, isAdmin, score) VALUES (@username, @password, 0, 0)", dbh.Connection))
+                            {
+                                cmd.Parameters.AddWithValue("username", username);
+                                cmd.Parameters.AddWithValue("password", password);
+                                cmd.ExecuteNonQuery();
+                                MessageBox.Show("user registered");
+                            }
+
+                            /*bool admin = false;
+                            using (MySqlCommand cmd = new MySqlCommand("SELECT * from tbl_users WHERE username = @username AND isAdmin = 1", dbh.Connection))
+                            {
+                                cmd.Parameters.AddWithValue("username", username);
+                                MySqlDataReader reader = cmd.ExecuteReader();
+                                if (!reader.HasRows)
+                                {
+                                    admin = false;
+                                }
+                                else
+                                {
+                                    admin = true;
+                                }
+                                reader.Close();
+                                if (admin)
+                                {
+                                    frmAdmin.Show();
+                                }
+                                else
+                                {
+                                    frmPlayer = new frmPlayer(frmRanking, username);
+                                    frmPlayer.Show();
+                                }
+                            }*/
+
+                        }
+
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+                /*dbh.TestConnection();
+                dbh.OpenConnectionToDB();
                 bool exist = false;
 
                 using (SqlCommand cmd = new SqlCommand("SELECT COUNT(*) FROM [tblUsers] WHERE Username = @Username", dbh.GetCon()))
@@ -63,8 +148,14 @@ namespace ProjectFifaV2
                     }
                 }
 
-                dbh.CloseConnectionToDB();
+                dbh.CloseConnectionToDB();*/
             }
+        }
+
+        private bool validate(string pass)
+        {
+            bool checkPass = CryptSharp.BlowfishCrypter.CheckPassword(txtPassword.Text, pass);
+            return checkPass;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -101,13 +192,13 @@ namespace ProjectFifaV2
                 
                 if (dbh.IsConnect())
                 {
+                    password = Crypter.Blowfish.Crypt(password);
 
-                    using (MySqlCommand cmd = new MySqlCommand("SELECT * FROM tbl_users WHERE Username = @Username AND Password = @Password", dbh.Connection))
+                    using (MySqlCommand cmd = new MySqlCommand("SELECT username, password FROM tbl_users WHERE Username = @Username", dbh.Connection))
                     {
                         cmd.Parameters.AddWithValue("Username", username);
-                        cmd.Parameters.AddWithValue("Password", password);
                         //exist = (int)cmd.ExecuteScalar() > 0;
-
+                        cmd.Prepare();
 
                         MySqlDataReader reader = cmd.ExecuteReader();
                         if (!reader.HasRows)
@@ -130,6 +221,7 @@ namespace ProjectFifaV2
                     if (exist)
                     {
                         bool admin = false;
+
                         using (MySqlCommand cmd = new MySqlCommand("SELECT * from tbl_users WHERE username = @username AND isAdmin = 1", dbh.Connection))
                         {
                             cmd.Parameters.AddWithValue("username", username);

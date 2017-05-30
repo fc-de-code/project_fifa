@@ -55,3 +55,9 @@ C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2
 C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\fresh.mdf
 C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\fresh_log.ldf
 C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\MySql.Data.dll
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\fresh.mdf
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\fresh_log.ldf
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\MySql.Data.dll
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\CryptSharp.dll
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\CryptSharp.pdb
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\CryptSharp.xml
