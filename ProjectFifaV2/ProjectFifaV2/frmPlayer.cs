@@ -22,6 +22,7 @@ namespace ProjectFifaV2
 
         List<string> combo;
         List<TextBox> txtBoxList;
+        public string un;
 
         public frmPlayer(Form frm, string un)
         {
@@ -32,14 +33,15 @@ namespace ProjectFifaV2
             InitializeComponent();
             if (DisableEditButton())
             {
-                btnEdit.Enabled = false;
+                btnUpdate.Enabled = false;
             }
             ShowResults();
-            ShowScoreCard();
+            //ShowScoreCard();
             this.Text = "Welcome " + un;
             lblname.Text = un;
             // sql hier ophalen teamnames uit database voor
             int teamId = 0;
+            this.un = un;
 
            
 
@@ -111,7 +113,7 @@ namespace ProjectFifaV2
         {
             bool hasPassed;
             //This is the deadline for filling in the predictions
-            DateTime deadline = new DateTime(2014, 06, 12);
+            DateTime deadline = new DateTime(2018, 06, 12);
             DateTime curTime = DateTime.Now;
             int result = DateTime.Compare(deadline, curTime);
 
@@ -226,6 +228,20 @@ namespace ProjectFifaV2
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
 
+          //int betPoint =  Convert.ToInt32(txtBet.Text);
+
+            //join maken.
+
+             //string query = "SELECT team1.name AS Home, team2.name AS Away, matches.score_team_a AS HomeScore, matches.score_team_b AS AwayScore FROM ((tbl_matches AS matches INNER JOIN tbl_teams AS team1 ON matches.team_id_a = team1.id) INNER JOIN tbl_teams AS team2 ON matches.team_id_b = team2.id) ORDER BY matches.id ASC";
+
+            //DataTable dt_matchesShow;
+
+           
+
+
+
+
+
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -248,20 +264,97 @@ namespace ProjectFifaV2
             string teamNaam2 = comboTeam2.SelectedItem.ToString();
 
 
-            int beat1 = Convert.ToInt32(txtScoreTeam1.Text);
-            int beat2 = Convert.ToInt32(txtScoreTeam2.Text);
+            int bet1 = Convert.ToInt32(txtScoreTeam1.Text);
+            int bet2 = Convert.ToInt32(txtScoreTeam2.Text);
 
-            lbltest.Text = beat1.ToString() + beat2.ToString() ;
+            lbltest.Text = bet1.ToString() + bet2.ToString() ;
 
             /// Insuert van de test gebruiken
-            MySqlCommand command = connection.CreateCommand();
+            
+            MySqlCommand command = dbh.Connection.CreateCommand();
 
-            command.CommandText = "INSERT INTO tbl_users score valus ('beat1'),('beat2')"; 
+            command.CommandText = "INSERT INTO tbl_predictions (User_id, Game_id, PredictedTeam1Score,PredictedTeam2Score) values (1, 1, " + bet1 + ", " +bet2 + ")";
 
-
+            command.ExecuteNonQuery();
         }
 
         private void comboTeam2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            ///join van predictions en matches
+            string query2 = "SELECT pred.PredictedTeam1Score AS pred1, pred.PredictedTeam2Score AS pred2 ,matches.score_team_a As scoreA, matches.score_team_b AS scoreB FROM ((tbl_predictions AS pred INNER JOIN tbl_users AS user ON user.id=pred.User_id)  INNER JOIN tbl_matches AS matches ON pred.Game_id=matches.id )";
+
+            DataTable dt_Calculation = dbh.select(query2, "Calculation");
+
+            ///for loop
+            int score = 0;
+
+
+            for (int i = 0; i < dt_Calculation.Rows.Count; i++)
+            {
+
+                DataRow dr_Calulation = dt_Calculation.Rows[i];
+
+                ///de int van de scorens van de matches en de scorens van teams uit de matches
+
+                int predTeam1 = Convert.ToInt32(dr_Calulation["pred1"].ToString());
+                int predTeam2 = Convert.ToInt32(dr_Calulation["pred2"].ToString());
+                int Team1 = Convert.ToInt32(dr_Calulation["scoreA"].ToString());
+                int Team2 = Convert.ToInt32(dr_Calulation["scoreB"].ToString());
+
+
+
+
+                //Dan vergelijken met if else
+
+                if (Team1 > Team2)
+                {
+                    if (predTeam1 == Team1 && predTeam2 == Team2)
+                    {
+                        score += 2;
+                    }
+                    else if (predTeam1 > predTeam2)
+                    {
+                        score += 1;
+                    }
+                }
+                else if (Team2 > Team1)
+                {
+                    if (predTeam2 == Team2 && predTeam1 == Team1)
+                    {
+                        score += 2;
+                    }
+                    else if (predTeam2 > predTeam1)
+                    {
+                        score += 1;
+                    }
+                }
+                else
+                {
+                    if (predTeam1 == Team1 && predTeam2 == Team2)
+                    {
+                        score += 2;
+                    }
+                }
+            }
+
+
+
+
+
+            MySqlCommand command = dbh.Connection.CreateCommand();
+
+            command.CommandText = "Update tbl_Users set score = " + score + " Where (username = '" + this.un + "')";
+
+            command.ExecuteNonQuery();
+
+        }
+
+        private void pnlPredCard_Paint(object sender, PaintEventArgs e)
         {
 
         }
