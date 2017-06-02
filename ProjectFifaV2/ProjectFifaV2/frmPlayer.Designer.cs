@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnClearPrediction = new System.Windows.Forms.Button();
             this.btnLogOut = new System.Windows.Forms.Button();
             this.lblResultsOverview = new System.Windows.Forms.Label();
             this.btnAdmin = new System.Windows.Forms.Button();
@@ -51,7 +50,6 @@
             this.clmTeamSaldo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.lblPoints = new System.Windows.Forms.Label();
             this.lblname = new System.Windows.Forms.Label();
-            this.lbltest = new System.Windows.Forms.Label();
             this.lvPoints = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -62,7 +60,7 @@
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("Calibri", 12.8F, System.Drawing.FontStyle.Bold);
             this.btnUpdate.ForeColor = System.Drawing.Color.Gray;
-            this.btnUpdate.Location = new System.Drawing.Point(392, 333);
+            this.btnUpdate.Location = new System.Drawing.Point(391, 261);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(5);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(188, 46);
@@ -71,26 +69,12 @@
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // btnClearPrediction
-            // 
-            this.btnClearPrediction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClearPrediction.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearPrediction.ForeColor = System.Drawing.Color.DarkGray;
-            this.btnClearPrediction.Location = new System.Drawing.Point(392, 260);
-            this.btnClearPrediction.Margin = new System.Windows.Forms.Padding(4);
-            this.btnClearPrediction.Name = "btnClearPrediction";
-            this.btnClearPrediction.Size = new System.Drawing.Size(187, 46);
-            this.btnClearPrediction.TabIndex = 2;
-            this.btnClearPrediction.Text = "Clear";
-            this.btnClearPrediction.UseVisualStyleBackColor = true;
-            this.btnClearPrediction.Click += new System.EventHandler(this.btnClearPrediction_Click);
-            // 
             // btnLogOut
             // 
             this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogOut.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogOut.ForeColor = System.Drawing.Color.DarkGray;
-            this.btnLogOut.Location = new System.Drawing.Point(852, 657);
+            this.btnLogOut.Location = new System.Drawing.Point(991, 750);
             this.btnLogOut.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogOut.Name = "btnLogOut";
             this.btnLogOut.Size = new System.Drawing.Size(186, 46);
@@ -104,7 +88,7 @@
             this.lblResultsOverview.AutoSize = true;
             this.lblResultsOverview.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Bold);
             this.lblResultsOverview.ForeColor = System.Drawing.Color.White;
-            this.lblResultsOverview.Location = new System.Drawing.Point(639, 23);
+            this.lblResultsOverview.Location = new System.Drawing.Point(789, 17);
             this.lblResultsOverview.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblResultsOverview.Name = "lblResultsOverview";
             this.lblResultsOverview.Size = new System.Drawing.Size(241, 41);
@@ -116,7 +100,7 @@
             this.btnAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdmin.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdmin.ForeColor = System.Drawing.Color.DarkGray;
-            this.btnAdmin.Location = new System.Drawing.Point(393, 657);
+            this.btnAdmin.Location = new System.Drawing.Point(394, 750);
             this.btnAdmin.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdmin.Name = "btnAdmin";
             this.btnAdmin.Size = new System.Drawing.Size(186, 46);
@@ -129,7 +113,7 @@
             this.btnRanking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRanking.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRanking.ForeColor = System.Drawing.Color.DarkGray;
-            this.btnRanking.Location = new System.Drawing.Point(27, 657);
+            this.btnRanking.Location = new System.Drawing.Point(31, 750);
             this.btnRanking.Margin = new System.Windows.Forms.Padding(4);
             this.btnRanking.Name = "btnRanking";
             this.btnRanking.Size = new System.Drawing.Size(186, 46);
@@ -176,7 +160,7 @@
             this.txtScoreTeam2.BackColor = System.Drawing.Color.DimGray;
             this.txtScoreTeam2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtScoreTeam2.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtScoreTeam2.Location = new System.Drawing.Point(447, 191);
+            this.txtScoreTeam2.Location = new System.Drawing.Point(447, 190);
             this.txtScoreTeam2.Margin = new System.Windows.Forms.Padding(4);
             this.txtScoreTeam2.Name = "txtScoreTeam2";
             this.txtScoreTeam2.Size = new System.Drawing.Size(133, 23);
@@ -271,15 +255,15 @@
             this.lvOverview.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lvOverview.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.clmTeam1,
-            this.clmHomeTeamScore,
-            this.clmTeamSaldo});
+            this.clmTeamSaldo,
+            this.clmHomeTeamScore});
             this.lvOverview.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvOverview.ForeColor = System.Drawing.Color.White;
             this.lvOverview.HoverSelection = true;
-            this.lvOverview.Location = new System.Drawing.Point(646, 83);
+            this.lvOverview.Location = new System.Drawing.Point(796, 77);
             this.lvOverview.Margin = new System.Windows.Forms.Padding(5);
             this.lvOverview.Name = "lvOverview";
-            this.lvOverview.Size = new System.Drawing.Size(392, 547);
+            this.lvOverview.Size = new System.Drawing.Size(381, 645);
             this.lvOverview.TabIndex = 7;
             this.lvOverview.UseCompatibleStateImageBehavior = false;
             this.lvOverview.View = System.Windows.Forms.View.Details;
@@ -288,7 +272,7 @@
             // clmTeam1
             // 
             this.clmTeam1.Text = "Team 1";
-            this.clmTeam1.Width = 146;
+            this.clmTeam1.Width = 100;
             // 
             // clmHomeTeamScore
             // 
@@ -300,14 +284,14 @@
             // 
             this.clmTeamSaldo.Text = "Team2";
             this.clmTeamSaldo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.clmTeamSaldo.Width = 193;
+            this.clmTeamSaldo.Width = 100;
             // 
             // lblPoints
             // 
             this.lblPoints.AutoSize = true;
             this.lblPoints.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Bold);
             this.lblPoints.ForeColor = System.Drawing.Color.White;
-            this.lblPoints.Location = new System.Drawing.Point(25, 346);
+            this.lblPoints.Location = new System.Drawing.Point(25, 355);
             this.lblPoints.Name = "lblPoints";
             this.lblPoints.Size = new System.Drawing.Size(224, 33);
             this.lblPoints.TabIndex = 29;
@@ -323,16 +307,6 @@
             this.lblname.Size = new System.Drawing.Size(0, 29);
             this.lblname.TabIndex = 30;
             // 
-            // lbltest
-            // 
-            this.lbltest.AutoSize = true;
-            this.lbltest.ForeColor = System.Drawing.Color.Red;
-            this.lbltest.Location = new System.Drawing.Point(292, 290);
-            this.lbltest.Name = "lbltest";
-            this.lbltest.Size = new System.Drawing.Size(46, 17);
-            this.lbltest.TabIndex = 31;
-            this.lbltest.Text = "label1";
-            // 
             // lvPoints
             // 
             this.lvPoints.AccessibleRole = System.Windows.Forms.AccessibleRole.Grip;
@@ -345,24 +319,25 @@
             this.lvPoints.Font = new System.Drawing.Font("Calibri", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvPoints.ForeColor = System.Drawing.Color.White;
             this.lvPoints.HoverSelection = true;
-            this.lvPoints.Location = new System.Drawing.Point(35, 398);
+            this.lvPoints.Location = new System.Drawing.Point(36, 422);
             this.lvPoints.Margin = new System.Windows.Forms.Padding(5);
             this.lvPoints.Name = "lvPoints";
-            this.lvPoints.Size = new System.Drawing.Size(545, 232);
+            this.lvPoints.Size = new System.Drawing.Size(543, 300);
             this.lvPoints.TabIndex = 32;
             this.lvPoints.UseCompatibleStateImageBehavior = false;
             this.lvPoints.View = System.Windows.Forms.View.Details;
+            this.lvPoints.SelectedIndexChanged += new System.EventHandler(this.lvPoints_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
             this.columnHeader1.Text = "naam";
-            this.columnHeader1.Width = 260;
+            this.columnHeader1.Width = 200;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "punten";
             this.columnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader2.Width = 231;
+            this.columnHeader2.Width = 200;
             // 
             // frmPlayer
             // 
@@ -370,9 +345,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(28)))));
-            this.ClientSize = new System.Drawing.Size(1071, 718);
+            this.ClientSize = new System.Drawing.Size(1216, 824);
             this.Controls.Add(this.lvPoints);
-            this.Controls.Add(this.lbltest);
             this.Controls.Add(this.lblname);
             this.Controls.Add(this.lblPoints);
             this.Controls.Add(this.label9);
@@ -391,11 +365,13 @@
             this.Controls.Add(this.lvOverview);
             this.Controls.Add(this.lblResultsOverview);
             this.Controls.Add(this.btnLogOut);
-            this.Controls.Add(this.btnClearPrediction);
             this.Controls.Add(this.btnUpdate);
+            this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.HelpButton = true;
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "frmPlayer";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.RightToLeftLayout = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "PlayerName";
             this.Load += new System.EventHandler(this.frmPlayer_Load);
             this.ResumeLayout(false);
@@ -406,7 +382,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Button btnClearPrediction;
         private System.Windows.Forms.Button btnLogOut;
         private System.Windows.Forms.Label lblResultsOverview;
         private System.Windows.Forms.ListView lvOverview;
@@ -428,7 +403,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label lblPoints;
         private System.Windows.Forms.Label lblname;
-        private System.Windows.Forms.Label lbltest;
         private System.Windows.Forms.ListView lvPoints;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;

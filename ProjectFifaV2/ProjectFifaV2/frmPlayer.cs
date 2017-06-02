@@ -35,7 +35,8 @@ namespace ProjectFifaV2
             {
                 btnUpdate.Enabled = false;
             }
-            ShowResults();
+           // ShowResults();
+
             //ShowScoreCard();
             this.Text = "Welcome " + un;
             lblname.Text = un;
@@ -49,7 +50,7 @@ namespace ProjectFifaV2
             string query = "SELECT * FROM tbl_teams";
             string teams = "teams";
 
-
+            ///  Aanpassen
             string jurriaan = "SELECT * FROM tbl_teams";
 
             DataTable dt = dbh.select(jurriaan,teams);
@@ -66,11 +67,29 @@ namespace ProjectFifaV2
 
             }
 
+            ShowResults();
+            //ShowScoreCard();
+            this.Text = "Welcome " + un;
+            lblname.Text = un;
+            // sql hier ophalen teamnames uit database voor
+
+            this.un = un;
+
+
+            ShowResults2();
+            //ShowScoreCard();
+            this.Text = "Welcome " + un;
+            lblname.Text = un;
+            // sql hier ophalen teamnames uit database voor
+            
+            this.un = un;
 
 
 
 
+            
 
+           
 
 
 
@@ -129,25 +148,97 @@ namespace ProjectFifaV2
             return hasPassed;
         }
 
+        //private void ShowResultsTest()
+        //{
+        //    dbh.TestConnection();
+        //    dbh.OpenConnectionToDB();
+
+        //    DataTable hometable = dbh.FillDT("SELECT tblTeams.TeamName, tblGames.HomeTeamScore FROM tblGames INNER JOIN tblTeams ON tblGames.HomeTeam = tblTeams.Team_ID");
+        //    DataTable awayTable = dbh.FillDT("SELECT tblTeams.TeamName, tblGames.AwayTeamScore FROM tblGames INNER JOIN tblTeams ON tblGames.AwayTeam = tblTeams.Team_ID");
+
+        //    dbh.CloseConnectionToDB();
+
+        //    for (int i = 0; i < hometable.Rows.Count; i++)
+        //    {
+        //        DataRow dataRowHome = hometable.Rows[i];
+        //        DataRow dataRowAway = awayTable.Rows[i];
+        //        ListViewItem lstItem = new ListViewItem(dataRowHome["TeamName"].ToString());
+        //        lstItem.SubItems.Add(dataRowHome["HomeTeamScore"].ToString());
+        //        lstItem.SubItems.Add(dataRowAway["AwayTeamScore"].ToString());
+        //        lstItem.SubItems.Add(dataRowAway["TeamName"].ToString());
+        //        lvOverview.Items.Add(lstItem);
+        //    }
+        //}
+
         private void ShowResults()
+        {
+
+            string query = "SELECT team1.name AS home, matches.poule_id AS poule, team2.name AS away FROM tbl_matches AS matches INNER JOIN tbl_teams AS team1 ON matches.team_id_a=team1.id INNER JOIN tbl_teams AS team2 ON matches.team_id_b=team2.id ORDER BY matches.poule_id, matches.id ASC ";
+
+
+            DataTable Overview = dbh.select(query);
+
+            foreach (DataRow item in Overview.Rows)
+            {
+                ListViewItem tItem = new ListViewItem(item["home"].ToString());
+                tItem.SubItems.Add(item["Away"].ToString());
+                tItem.SubItems.Add(item["poule"].ToString());
+
+                lvOverview.Items.Add(tItem);
+
+            }
+
+
+            //itemsSelectionChange
+
+
+
+
+
+            //dbh.TestConnection();
+            //dbh.OpenConnectionToDB();
+
+            //string qwrie = "Select name,poule_id FROM tbl_teams";
+            //string qwrie2 = "Select name,poule_id FROM tbl_teams";
+
+            //DataTable hometable = dbh.select(qwrie, "");
+            //DataTable Awaytable = dbh.select(qwrie2, "");
+
+            //for (int i = 0; i < hometable.Rows.Count; i++)
+            //{
+            //    DataRow dataRowHome = hometable.Rows[i];
+            //    DataRow dataRowAway = Awaytable.Rows[i];
+
+
+            //    ListViewItem lstItem = new ListViewItem(dataRowHome["name"].ToString());
+            //    lstItem.SubItems.Add(dataRowHome["poule_id"].ToString());
+
+            //    //ListViewItem lstItem2 = new ListViewItem(dataRowAway["name"].ToString());
+            //    //lstItem.SubItems.Add(dataRowAway["poule_id"].ToString());
+
+
+            //    lstItem.SubItems.Add(dataRowHome["name"].ToString());
+            //    lvOverview.Items.Add(lstItem);
+            //}
+        }
+
+        private void ShowResults2()
         {
             dbh.TestConnection();
             dbh.OpenConnectionToDB();
 
-            DataTable hometable = dbh.FillDT("SELECT tblTeams.TeamName, tblGames.HomeTeamScore FROM tblGames INNER JOIN tblTeams ON tblGames.HomeTeam = tblTeams.Team_ID");
-            DataTable awayTable = dbh.FillDT("SELECT tblTeams.TeamName, tblGames.AwayTeamScore FROM tblGames INNER JOIN tblTeams ON tblGames.AwayTeam = tblTeams.Team_ID");
+            string qwrie= "Select username,score FROM tbl_users";
 
-            dbh.CloseConnectionToDB();
+            DataTable Points = dbh.select(qwrie, "");
 
-            for (int i = 0; i < hometable.Rows.Count; i++)
+            for (int i = 0; i < Points.Rows.Count; i++)
             {
-                DataRow dataRowHome = hometable.Rows[i];
-                DataRow dataRowAway = awayTable.Rows[i];
-                ListViewItem lstItem = new ListViewItem(dataRowHome["TeamName"].ToString());
-                lstItem.SubItems.Add(dataRowHome["HomeTeamScore"].ToString());
-                lstItem.SubItems.Add(dataRowAway["AwayTeamScore"].ToString());
-                lstItem.SubItems.Add(dataRowAway["TeamName"].ToString());
-                lvOverview.Items.Add(lstItem);
+                DataRow dataRowHome = Points.Rows[i];
+                
+                ListViewItem lstItem = new ListViewItem(dataRowHome["username"].ToString());
+                lstItem.SubItems.Add(dataRowHome["Score"].ToString());
+               
+                lvPoints.Items.Add(lstItem);
             }
         }
 
@@ -156,8 +247,8 @@ namespace ProjectFifaV2
             dbh.TestConnection();
             dbh.OpenConnectionToDB();
 
-            DataTable hometable = dbh.FillDT("SELECT tblTeams.TeamName FROM tblGames INNER JOIN tblTeams ON tblGames.HomeTeam = tblTeams.Team_ID");
-            DataTable awayTable = dbh.FillDT("SELECT tblTeams.TeamName FROM tblGames INNER JOIN tblTeams ON tblGames.AwayTeam = tblTeams.Team_ID");
+           DataTable hometable = dbh.FillDT("SELECT tblTeams.TeamName FROM tblGames INNER JOIN tblTeams ON tblGames.HomeTeam = tblTeams.Team_ID");
+           DataTable awayTable = dbh.FillDT("SELECT tblTeams.TeamName FROM tblGames INNER JOIN tblTeams ON tblGames.AwayTeam = tblTeams.Team_ID");
 
             dbh.CloseConnectionToDB();
 
@@ -188,10 +279,10 @@ namespace ProjectFifaV2
                 lblAwayTeam.Location = new Point(txtHomePred.Width + lblHomeTeam.Width + txtAwayPred.Width, txtHomePred.Top + 3);
                 lblAwayTeam.AutoSize = true;
 
-                pnlPredCard.Controls.Add(lblHomeTeam);
-                pnlPredCard.Controls.Add(txtHomePred);
-                pnlPredCard.Controls.Add(txtAwayPred);
-                pnlPredCard.Controls.Add(lblAwayTeam);
+                //pnlPredCard.Controls.Add(lblHomeTeam);
+                //pnlPredCard.Controls.Add(txtHomePred);
+                //pnlPredCard.Controls.Add(txtAwayPred);
+                //pnlPredCard.Controls.Add(lblAwayTeam);
                 //ListViewItem lstItem = new ListViewItem(dataRowHome["TeamName"].ToString());
                 //lstItem.SubItems.Add(dataRowHome["HomeTeamScore"].ToString());
                 //lstItem.SubItems.Add(dataRowAway["AwayTeamScore"].ToString());
@@ -256,21 +347,58 @@ namespace ProjectFifaV2
 
         private void btnBet_Click(object sender, EventArgs e)
         {
+
+            //Test Code Niet Nodig voor het Programaa
+
             //sql insert bet into prediction 
 
             // 4 varible
 
-            string teamName1 = comboTeam1.SelectedItem.ToString();
-            string teamNaam2 = comboTeam2.SelectedItem.ToString();
+            //lbltest.Text = bet1.ToString() + bet2.ToString() ;
 
+            // 2 Varible die het mogelijk maken om Bets te platsen. 
+            int bet1;
+            int bet2;
 
-            int bet1 = Convert.ToInt32(txtScoreTeam1.Text);
-            int bet2 = Convert.ToInt32(txtScoreTeam2.Text);
+            //try catch
+            try
+            {
+                bet1 = Convert.ToInt32(txtScoreTeam1.Text);
+                bet2 = Convert.ToInt32(txtScoreTeam2.Text);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Try a numer");
+            }
+            
+            bool isNumber = false;
+            isNumber = int.TryParse(txtScoreTeam1.Text, out bet1);
+            if (!isNumber)
+            {
+               
 
-            lbltest.Text = bet1.ToString() + bet2.ToString() ;
+            }
+            else
+            {
+                string teamName1 = comboTeam1.SelectedItem.ToString();
+
+            }
+
+            bool isNumber2 = false;
+            isNumber2 = int.TryParse(txtScoreTeam2.Text, out bet2);
+            if (!isNumber)
+            {
+                
+                
+            }
+            else
+            {
+                string teamNaam2 = comboTeam2.SelectedItem.ToString();
+
+            }
 
             /// Insuert van de test gebruiken
-            
+
             MySqlCommand command = dbh.Connection.CreateCommand();
 
             command.CommandText = "INSERT INTO tbl_predictions (User_id, Game_id, PredictedTeam1Score,PredictedTeam2Score) values (1, 1, " + bet1 + ", " +bet2 + ")";
@@ -285,78 +413,113 @@ namespace ProjectFifaV2
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            ///join van predictions en matches
-            string query2 = "SELECT pred.PredictedTeam1Score AS pred1, pred.PredictedTeam2Score AS pred2 ,matches.score_team_a As scoreA, matches.score_team_b AS scoreB FROM ((tbl_predictions AS pred INNER JOIN tbl_users AS user ON user.id=pred.User_id)  INNER JOIN tbl_matches AS matches ON pred.Game_id=matches.id )";
 
-            DataTable dt_Calculation = dbh.select(query2, "Calculation");
+            DataTable users = dbh.select("SELECT * FROM tbl_users", "");
 
-            ///for loop
-            int score = 0;
-
-
-            for (int i = 0; i < dt_Calculation.Rows.Count; i++)
+            for (int i = 0; i < users.Rows.Count; i++)
             {
+                DataRow user = users.Rows[i];
+                int score = 0;
+                string query2 = "SELECT pred.PredictedTeam1Score AS pred1, pred.PredictedTeam2Score AS pred2 ,matches.score_team_a As scoreA, matches.score_team_b AS scoreB FROM (tbl_predictions AS pred INNER JOIN tbl_matches AS matches ON pred.Game_id=matches.id )WHERE pred.user_id="+ user["id"]+"";
 
-                DataRow dr_Calulation = dt_Calculation.Rows[i];
+                DataTable games = dbh.select(query2, "");
 
-                ///de int van de scorens van de matches en de scorens van teams uit de matches
-
-                int predTeam1 = Convert.ToInt32(dr_Calulation["pred1"].ToString());
-                int predTeam2 = Convert.ToInt32(dr_Calulation["pred2"].ToString());
-                int Team1 = Convert.ToInt32(dr_Calulation["scoreA"].ToString());
-                int Team2 = Convert.ToInt32(dr_Calulation["scoreB"].ToString());
-
-
-
-
-                //Dan vergelijken met if else
-
-                if (Team1 > Team2)
+                for (int j = 0; j < games.Rows.Count; j++)
                 {
-                    if (predTeam1 == Team1 && predTeam2 == Team2)
+                    DataRow game = games.Rows[j];
+
+
+                    int predTeam1;
+                    int.TryParse(game["pred1"].ToString(),out predTeam1);
+                    int predTeam2;
+                    int.TryParse(game["pred2"].ToString(),out predTeam2);
+                    int Team1;
+                    int.TryParse(game["scoreA"].ToString(),out Team1);
+                    int Team2;
+                    int.TryParse(game["scoreB"].ToString(),out Team2);
+
+                    if (Team1 > Team2)
                     {
-                        score += 2;
+                        if (predTeam1 == Team1 && predTeam2 == Team2)
+                        {
+                            score += 2;
+                        }
+                        else if (predTeam1 > predTeam2)
+                        {
+                            score += 1;
+                        }
                     }
-                    else if (predTeam1 > predTeam2)
+                    else if (Team2 > Team1)
                     {
-                        score += 1;
+                        if (predTeam2 == Team2 && predTeam1 == Team1)
+                        {
+                            score += 2;
+                        }
+                        else if (predTeam2 > predTeam1)
+                        {
+                            score += 1;
+                        }
+                    }
+                    else
+                    {
+                        if (predTeam1 == Team1 && predTeam2 == Team2)
+                        {
+                            score += 2;
+                        }
                     }
                 }
-                else if (Team2 > Team1)
-                {
-                    if (predTeam2 == Team2 && predTeam1 == Team1)
-                    {
-                        score += 2;
-                    }
-                    else if (predTeam2 > predTeam1)
-                    {
-                        score += 1;
-                    }
-                }
-                else
-                {
-                    if (predTeam1 == Team1 && predTeam2 == Team2)
-                    {
-                        score += 2;
-                    }
-                }
+                     MySqlCommand command = dbh.Connection.CreateCommand();
+
+                     command.CommandText = "Update tbl_Users set score = " + score + " Where (username = '" + this.un + "')";
+
+                     command.ExecuteNonQuery();
             }
 
+            ///join van predictions en matches
+            //string query2 = "SELECT pred.PredictedTeam1Score AS pred1, pred.PredictedTeam2Score AS pred2 ,matches.score_team_a As scoreA, matches.score_team_b AS scoreB FROM ((tbl_predictions AS pred INNER JOIN tbl_users AS user ON user.id=pred.User_id)  INNER JOIN tbl_matches AS matches ON pred.Game_id=matches.id )";
+
+            
+
+            ///for loop 
+
+            
+
+
+           
 
 
 
 
-            MySqlCommand command = dbh.Connection.CreateCommand();
 
-            command.CommandText = "Update tbl_Users set score = " + score + " Where (username = '" + this.un + "')";
-
-            command.ExecuteNonQuery();
+            
 
         }
 
         private void pnlPredCard_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void lvPoints_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            /*dbh.TestConnection();
+            dbh.OpenConnectionToDB();
+
+            DataTable hometable = dbh.FillDT("SELECT tblTeams.TeamName, tblGames.HomeTeamScore FROM tblGames INNER JOIN tblTeams ON tblGames.HomeTeam = tblTeams.Team_ID");
+            DataTable awayTable = dbh.FillDT("SELECT tblTeams.TeamName, tblGames.AwayTeamScore FROM tblGames INNER JOIN tblTeams ON tblGames.AwayTeam = tblTeams.Team_ID");
+
+            dbh.CloseConnectionToDB();
+
+            for (int i = 0; i < hometable.Rows.Count; i++)
+            {
+                DataRow dataRowHome = hometable.Rows[i];
+                DataRow dataRowAway = awayTable.Rows[i];
+                ListViewItem lstItem = new ListViewItem(dataRowHome["TeamName"].ToString());
+                lstItem.SubItems.Add(dataRowHome["HomeTeamScore"].ToString());
+                lstItem.SubItems.Add(dataRowAway["AwayTeamScore"].ToString());
+                lstItem.SubItems.Add(dataRowAway["TeamName"].ToString());
+                lvPoints.Items.Add(lstItem);
+            }*/
         }
     }
 }
