@@ -47,14 +47,17 @@ namespace ProjectFifaV2
                 ListViewItem lstItem = new ListViewItem((i + 1).ToString());
                 lstItem.SubItems.Add(dataRow["Username"].ToString());
                 lstItem.SubItems.Add(dataRow["Score"].ToString());
-                lvRanking.Items.Add(lstItem);
+                lvRankingUser.Items.Add(lstItem);
             }
             dbh.CloseConnectionToDB();
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            dbh.TestConnection();
+            dbh.OpenConnectionToDB();
 
+            string qwrie = "Select username,score FROM tbl_users";
         }
 
         private void lvRanking_SelectedIndexChanged(object sender, EventArgs e)

@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.btnLoguit = new System.Windows.Forms.Button();
-            this.lvRanking = new System.Windows.Forms.ListView();
+            this.lvRankingUser = new System.Windows.Forms.ListView();
             this.clmRank = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmNaam = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmScore = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.lvRankingTeam = new System.Windows.Forms.ListView();
             this.clmTeam = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmScoren = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.clmSaldo = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -57,23 +57,23 @@
             this.btnLoguit.UseVisualStyleBackColor = false;
             this.btnLoguit.Click += new System.EventHandler(this.btnRankingBack_Click);
             // 
-            // lvRanking
+            // lvRankingUser
             // 
-            this.lvRanking.BackColor = System.Drawing.Color.Gray;
-            this.lvRanking.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lvRanking.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.lvRankingUser.BackColor = System.Drawing.Color.Gray;
+            this.lvRankingUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lvRankingUser.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.clmRank,
             this.clmNaam,
             this.clmScore});
-            this.lvRanking.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.lvRanking.Location = new System.Drawing.Point(47, 78);
-            this.lvRanking.Margin = new System.Windows.Forms.Padding(5);
-            this.lvRanking.Name = "lvRanking";
-            this.lvRanking.Size = new System.Drawing.Size(429, 912);
-            this.lvRanking.TabIndex = 2;
-            this.lvRanking.UseCompatibleStateImageBehavior = false;
-            this.lvRanking.View = System.Windows.Forms.View.Details;
-            this.lvRanking.SelectedIndexChanged += new System.EventHandler(this.lvRanking_SelectedIndexChanged);
+            this.lvRankingUser.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.lvRankingUser.Location = new System.Drawing.Point(47, 78);
+            this.lvRankingUser.Margin = new System.Windows.Forms.Padding(5);
+            this.lvRankingUser.Name = "lvRankingUser";
+            this.lvRankingUser.Size = new System.Drawing.Size(429, 912);
+            this.lvRankingUser.TabIndex = 2;
+            this.lvRankingUser.UseCompatibleStateImageBehavior = false;
+            this.lvRankingUser.View = System.Windows.Forms.View.Details;
+            this.lvRankingUser.SelectedIndexChanged += new System.EventHandler(this.lvRanking_SelectedIndexChanged);
             // 
             // clmRank
             // 
@@ -90,27 +90,27 @@
             this.clmScore.Text = "Score";
             this.clmScore.Width = 177;
             // 
-            // listView1
+            // lvRankingTeam
             // 
-            this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.lvRankingTeam.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.listView1.BackColor = System.Drawing.Color.Gray;
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.lvRankingTeam.BackColor = System.Drawing.Color.Gray;
+            this.lvRankingTeam.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.clmTeam,
             this.clmScoren,
             this.clmSaldo,
             this.clmRanking});
-            this.listView1.ForeColor = System.Drawing.Color.White;
-            this.listView1.FullRowSelect = true;
-            this.listView1.Location = new System.Drawing.Point(734, 78);
-            this.listView1.Margin = new System.Windows.Forms.Padding(5);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(433, 912);
-            this.listView1.TabIndex = 3;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+            this.lvRankingTeam.ForeColor = System.Drawing.Color.White;
+            this.lvRankingTeam.FullRowSelect = true;
+            this.lvRankingTeam.Location = new System.Drawing.Point(734, 78);
+            this.lvRankingTeam.Margin = new System.Windows.Forms.Padding(5);
+            this.lvRankingTeam.Name = "lvRankingTeam";
+            this.lvRankingTeam.Size = new System.Drawing.Size(433, 912);
+            this.lvRankingTeam.TabIndex = 3;
+            this.lvRankingTeam.UseCompatibleStateImageBehavior = false;
+            this.lvRankingTeam.View = System.Windows.Forms.View.Details;
+            this.lvRankingTeam.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // clmTeam
             // 
@@ -169,8 +169,8 @@
             this.ClientSize = new System.Drawing.Size(1248, 1037);
             this.Controls.Add(this.btnAdmins);
             this.Controls.Add(this.btnMatch);
-            this.Controls.Add(this.listView1);
-            this.Controls.Add(this.lvRanking);
+            this.Controls.Add(this.lvRankingTeam);
+            this.Controls.Add(this.lvRankingUser);
             this.Controls.Add(this.btnLoguit);
             this.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
@@ -188,11 +188,11 @@
         #endregion
 
         private System.Windows.Forms.Button btnLoguit;
-        private System.Windows.Forms.ListView lvRanking;
+        private System.Windows.Forms.ListView lvRankingUser;
         private System.Windows.Forms.ColumnHeader clmRank;
         private System.Windows.Forms.ColumnHeader clmNaam;
         private System.Windows.Forms.ColumnHeader clmScore;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView lvRankingTeam;
         private System.Windows.Forms.ColumnHeader clmTeam;
         private System.Windows.Forms.ColumnHeader clmScoren;
         private System.Windows.Forms.ColumnHeader clmSaldo;
