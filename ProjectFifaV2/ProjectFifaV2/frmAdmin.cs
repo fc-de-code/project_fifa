@@ -43,10 +43,13 @@ namespace ProjectFifaV2
 
         private void ExecuteSQL(string selectCommandText)
         {
-            dbh.TestConnection();
+            /*dbh.TestConnection();
             SqlDataAdapter dataAdapter = new SqlDataAdapter(selectCommandText, dbh.GetCon());
             dataAdapter.Fill(table);
-            dgvAdminData.DataSource = table;
+            dgvAdminData.DataSource = table;*/
+
+            DataTable dt = dbh.select(selectCommandText, "query");
+            dgvAdminData.DataSource = dt;
         }
 
         private void btnSelectFile_Click(object sender, EventArgs e)

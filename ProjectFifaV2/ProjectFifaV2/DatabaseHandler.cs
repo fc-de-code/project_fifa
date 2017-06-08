@@ -97,8 +97,27 @@ namespace ProjectFifaV2
             }
 
         }
+        public DataTable select(string query)
+        {
+            if (this.IsConnect())
+            {
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlDataAdapter returnVal = new MySqlDataAdapter(query, connection);
+                DataTable dt = new DataTable();
+                returnVal.Fill(dt);
+                return dt;
 
-      
+            }
+            else
+            {
+                this.Close();
+                DataTable dt = new DataTable();
+                return dt;
+            }
+
+        }
+
+
 
 
 
