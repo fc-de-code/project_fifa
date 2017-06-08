@@ -1,63 +1,85 @@
-C:\Users\Sietse\Documents\Visual Studio 2010\Projects\ProjectFifaV2\ProjectFifaV2\bin\Debug\DB.sdf
-C:\Users\Sietse\Documents\Visual Studio 2010\Projects\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmAdmin.resources
-C:\Users\Sietse\Documents\Visual Studio 2010\Projects\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmLogin.resources
-C:\Users\Sietse\Documents\Visual Studio 2010\Projects\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.Properties.Resources.resources
-C:\Users\Sietse\Documents\Visual Studio 2010\Projects\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.csproj.GenerateResource.Cache
-C:\Users\Sietse\Documents\Visual Studio 2010\Projects\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmRanking.resources
-C:\Users\Sietse\Documents\Visual Studio 2010\Projects\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.csprojResolveAssemblyReference.cache
-C:\Users\Sietse\Documents\Visual Studio 2010\Projects\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmPlayer.resources
-C:\Users\Sietse\Documents\Visual Studio 2010\Projects\ProjectFifaV2\ProjectFifaV2\bin\Debug\ProjectFifaV2.exe
-C:\Users\Sietse\Documents\Visual Studio 2010\Projects\ProjectFifaV2\ProjectFifaV2\bin\Debug\ProjectFifaV2.pdb
-C:\Users\Sietse\Documents\Visual Studio 2010\Projects\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.exe
-C:\Users\Sietse\Documents\Visual Studio 2010\Projects\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.pdb
-C:\Users\Bart Roos\Dropbox\Radius\_Project FIFA\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.exe
-C:\Users\Bart Roos\Dropbox\Radius\_Project FIFA\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.pdb
-C:\Users\Bart Roos\Dropbox\Radius\_Project FIFA\ProjectFifaV2\ProjectFifaV2\bin\Debug\ProjectFifaV2.exe
-C:\Users\Bart Roos\Dropbox\Radius\_Project FIFA\ProjectFifaV2\ProjectFifaV2\bin\Debug\ProjectFifaV2.pdb
-C:\Users\Bart Roos\Dropbox\Radius\_Project FIFA\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.csprojResolveAssemblyReference.cache
-C:\Users\Bart Roos\Dropbox\Radius\_Project FIFA\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmAdmin.resources
-C:\Users\Bart Roos\Dropbox\Radius\_Project FIFA\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmLogin.resources
-C:\Users\Bart Roos\Dropbox\Radius\_Project FIFA\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmPlayer.resources
-C:\Users\Bart Roos\Dropbox\Radius\_Project FIFA\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmRanking.resources
-C:\Users\Bart Roos\Dropbox\Radius\_Project FIFA\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.Properties.Resources.resources
-C:\Users\Bart Roos\Dropbox\Radius\_Project FIFA\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.csproj.GenerateResource.Cache
-C:\Users\Bart Roos\Dropbox\Radius\_Project FIFA\ProjectFifaV2\ProjectFifaV2\bin\Debug\db.mdf
-C:\Users\Bart Roos\Dropbox\Radius\_Project FIFA\ProjectFifaV2\ProjectFifaV2\bin\Debug\db_log.ldf
-C:\Users\Bart Roos\Dropbox\Radius\_Project FIFA\ProjectFifaV2\ProjectFifaV2\bin\Debug\ProjectFifaV2.exe.config
-D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\db.mdf
-D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\db_log.ldf
-D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\ProjectFifaV2.exe.config
-D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\ProjectFifaV2.exe
-D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\ProjectFifaV2.pdb
-D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.csprojResolveAssemblyReference.cache
-D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmAdmin.resources
-D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmLogin.resources
-D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmPlayer.resources
-D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmRanking.resources
-D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.Properties.Resources.resources
-D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.csproj.GenerateResource.Cache
-D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.exe
-D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.pdb
-C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\ProjectFifaV2.exe.config
-C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.exe
-C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.pdb
-C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\db.mdf
-C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\db_log.ldf
-C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\ProjectFifaV2.exe
-C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\ProjectFifaV2.pdb
-C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.csprojResolveAssemblyReference.cache
-C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmAdmin.resources
-C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmLogin.resources
-C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmRanking.resources
-C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.Properties.Resources.resources
-C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.csproj.GenerateResource.Cache
-C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmPlayer.resources
-C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\fresh.mdf
-C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\fresh_log.ldf
-C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\MySql.Data.dll
-D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\fresh.mdf
-D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\fresh_log.ldf
-D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\MySql.Data.dll
-D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\CryptSharp.dll
-D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\CryptSharp.pdb
-D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\CryptSharp.xml
+C:\Users\Sietse\Documents\Visual Studio 2010\Projects\ProjectFifaV2\ProjectFifaV2\bin\Debug\DB.sdf
+C:\Users\Sietse\Documents\Visual Studio 2010\Projects\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmAdmin.resources
+C:\Users\Sietse\Documents\Visual Studio 2010\Projects\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmLogin.resources
+C:\Users\Sietse\Documents\Visual Studio 2010\Projects\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.Properties.Resources.resources
+C:\Users\Sietse\Documents\Visual Studio 2010\Projects\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.csproj.GenerateResource.Cache
+C:\Users\Sietse\Documents\Visual Studio 2010\Projects\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmRanking.resources
+C:\Users\Sietse\Documents\Visual Studio 2010\Projects\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.csprojResolveAssemblyReference.cache
+C:\Users\Sietse\Documents\Visual Studio 2010\Projects\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmPlayer.resources
+C:\Users\Sietse\Documents\Visual Studio 2010\Projects\ProjectFifaV2\ProjectFifaV2\bin\Debug\ProjectFifaV2.exe
+C:\Users\Sietse\Documents\Visual Studio 2010\Projects\ProjectFifaV2\ProjectFifaV2\bin\Debug\ProjectFifaV2.pdb
+C:\Users\Sietse\Documents\Visual Studio 2010\Projects\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.exe
+C:\Users\Sietse\Documents\Visual Studio 2010\Projects\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.pdb
+C:\Users\Bart Roos\Dropbox\Radius\_Project FIFA\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.exe
+C:\Users\Bart Roos\Dropbox\Radius\_Project FIFA\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.pdb
+C:\Users\Bart Roos\Dropbox\Radius\_Project FIFA\ProjectFifaV2\ProjectFifaV2\bin\Debug\ProjectFifaV2.exe
+C:\Users\Bart Roos\Dropbox\Radius\_Project FIFA\ProjectFifaV2\ProjectFifaV2\bin\Debug\ProjectFifaV2.pdb
+C:\Users\Bart Roos\Dropbox\Radius\_Project FIFA\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.csprojResolveAssemblyReference.cache
+C:\Users\Bart Roos\Dropbox\Radius\_Project FIFA\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmAdmin.resources
+C:\Users\Bart Roos\Dropbox\Radius\_Project FIFA\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmLogin.resources
+C:\Users\Bart Roos\Dropbox\Radius\_Project FIFA\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmPlayer.resources
+C:\Users\Bart Roos\Dropbox\Radius\_Project FIFA\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmRanking.resources
+C:\Users\Bart Roos\Dropbox\Radius\_Project FIFA\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.Properties.Resources.resources
+C:\Users\Bart Roos\Dropbox\Radius\_Project FIFA\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.csproj.GenerateResource.Cache
+C:\Users\Bart Roos\Dropbox\Radius\_Project FIFA\ProjectFifaV2\ProjectFifaV2\bin\Debug\db.mdf
+C:\Users\Bart Roos\Dropbox\Radius\_Project FIFA\ProjectFifaV2\ProjectFifaV2\bin\Debug\db_log.ldf
+C:\Users\Bart Roos\Dropbox\Radius\_Project FIFA\ProjectFifaV2\ProjectFifaV2\bin\Debug\ProjectFifaV2.exe.config
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\db.mdf
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\db_log.ldf
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\ProjectFifaV2.exe.config
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\ProjectFifaV2.exe
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\ProjectFifaV2.pdb
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.csprojResolveAssemblyReference.cache
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmAdmin.resources
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmLogin.resources
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmPlayer.resources
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmRanking.resources
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.Properties.Resources.resources
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.csproj.GenerateResource.Cache
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.exe
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.pdb
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\ProjectFifaV2.exe.config
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.exe
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.pdb
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\db.mdf
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\db_log.ldf
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\ProjectFifaV2.exe
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\ProjectFifaV2.pdb
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.csprojResolveAssemblyReference.cache
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmAdmin.resources
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmLogin.resources
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmRanking.resources
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.Properties.Resources.resources
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.csproj.GenerateResource.Cache
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmPlayer.resources
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\fresh.mdf
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\fresh_log.ldf
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\MySql.Data.dll
+C:\Users\School\Documents\GitHub\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\db.mdf
+C:\Users\School\Documents\GitHub\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\db_log.ldf
+C:\Users\School\Documents\GitHub\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\fresh.mdf
+C:\Users\School\Documents\GitHub\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\fresh_log.ldf
+C:\Users\School\Documents\GitHub\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\ProjectFifaV2.exe.config
+C:\Users\School\Documents\GitHub\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\ProjectFifaV2.exe
+C:\Users\School\Documents\GitHub\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\ProjectFifaV2.pdb
+C:\Users\School\Documents\GitHub\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\MySql.Data.dll
+C:\Users\School\Documents\GitHub\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\School\Documents\GitHub\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.csprojResolveAssemblyReference.cache
+C:\Users\School\Documents\GitHub\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmAdmin.resources
+C:\Users\School\Documents\GitHub\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmLogin.resources
+C:\Users\School\Documents\GitHub\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmPlayer.resources
+C:\Users\School\Documents\GitHub\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmRanking.resources
+C:\Users\School\Documents\GitHub\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.Properties.Resources.resources
+C:\Users\School\Documents\GitHub\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.csproj.GenerateResource.Cache
+C:\Users\School\Documents\GitHub\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.exe
+C:\Users\School\Documents\GitHub\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.pdb
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.frmPlayer.resources
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\fresh.mdf
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\fresh_log.ldf
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\MySql.Data.dll
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\fresh.mdf
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\fresh_log.ldf
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\MySql.Data.dll
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\CryptSharp.dll
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\CryptSharp.pdb
+D:\School\projects\Period_4\project_fifa\ProjectFifaV2\ProjectFifaV2\bin\Debug\CryptSharp.xml

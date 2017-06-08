@@ -91,12 +91,12 @@ nav
         align-self: center
         font-size: 30px
         margin-left: 20px
-      .close
+      .login-close
         margin-right: 20px
         color: $text-color
         font-size: 40px
         font-weight: bold
-      .close:hover
+      .login-close:hover
         color: black
         text-decoration: none
         cursor: pointer
@@ -159,6 +159,110 @@ nav
     li
       text-align: center
       list-style: none
+
+.teams
+  display: flex
+  padding: 20px
+  flex-wrap: wrap
+
+
+.teamadd-button
+  display: flex
+  align-items: center
+  flex-direction: column
+  width: 10%
+  border: 5px double $hover-color
+  border-radius: 19px
+  padding: 10px
+  h3
+    font-size: 1.5em
+  span
+    font-size: 5em
+    color: #FFF
+    font-weight: bold
+.teamadd-button:hover
+  cursor: pointer
+  background: rgba(255,255,255,  0.1)
+
+.team-add
+  display: none
+  position: fixed
+  z-index: 1
+  padding-top: 100px
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  overflow: auto
+  background-color: rgb(0,0,0)
+  background-color: rgba(0,0,0,0.4)
+  .teamAddWindow
+    display: flex
+    background-color: white
+    margin: auto
+    width: 30%
+    border-radius: 20px
+    flex-direction: column
+    .teamAddHeader
+      display: flex
+      flex-direction: row
+      background-color: #fc9b00
+      justify-content: space-between
+      border-radius: 19px 19px 0px 0px
+      h3
+        align-self: center
+        font-size: 30px
+        margin-left: 20px
+      .teamadd-close
+        margin-right: 20px
+        color: $text-color
+        font-size: 40px
+        font-weight: bold
+      .teamadd-close:hover
+        color: black
+        text-decoration: none
+        cursor: pointer
+    form
+      display: flex
+      flex-direction: column
+      margin-top: 30px
+      label
+        font-size: 1.3em
+        font-weight: bold
+        margin: 10px
+        align-self: center
+        font-family: 'Baloo'
+      input
+        width: 60%
+        padding: 10px
+        border-top: 5px double $hover-color
+        border-left: none
+        border-right: none
+        border-bottom: 5px double $hover-color
+        font-size: 1.2em
+        align-self: center
+        font-family: 'Baloo'
+      textarea
+        font-family: 'Baloo'
+        font-size: 1em
+        height: 100px
+        width: 60%
+        border-top: 5px double $hover-color
+        border-left: none
+        border-right: none
+        border-bottom: 5px double $hover-color
+        align-self: center
+        resize: none
+      button
+        margin: 40px
+        padding: 10px 20px
+        border-radius: 5px
+        background-color: #fc9b00
+        border-style: none
+        font-size: 1.2em
+        font-weight: bold
+        font-family: 'Baloo'
+
 
 footer
   margin-top: 80px
