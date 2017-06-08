@@ -19,7 +19,7 @@ namespace ProjectFifaV2
             dbh = new DatabaseHandler();
             InitializeComponent();
             SetListColumnWidth();
-            ShowScore();
+            //ShowScore();
         }
 
         private void btnRankingBack_Click(object sender, EventArgs e)
@@ -34,23 +34,23 @@ namespace ProjectFifaV2
             clmScore.Width = 80;
         }
 
-        private void ShowScore()
-        {
-            dbh.TestConnection();
-            dbh.OpenConnectionToDB();
+        //private void ShowScore()
+        //{
+        //    dbh.TestConnection();
+        //    dbh.OpenConnectionToDB();
 
-            DataTable table = dbh.FillDT("SELECT Username, Score FROM tblUsers WHERE (IsAdmin = 0) ORDER BY Score DESC");
+        //    DataTable table = dbh.FillDT("SELECT Username, Score FROM tblUsers WHERE (IsAdmin = 0) ORDER BY Score DESC");
 
-            for (int i = 0; i < table.Rows.Count; i++)
-            {
-                DataRow dataRow = table.Rows[i];
-                ListViewItem lstItem = new ListViewItem((i + 1).ToString());
-                lstItem.SubItems.Add(dataRow["Username"].ToString());
-                lstItem.SubItems.Add(dataRow["Score"].ToString());
-                lvRankingUser.Items.Add(lstItem);
-            }
-            dbh.CloseConnectionToDB();
-        }
+        //    for (int i = 0; i < table.Rows.Count; i++)
+        //    {
+        //        DataRow dataRow = table.Rows[i];
+        //        ListViewItem lstItem = new ListViewItem((i + 1).ToString());
+        //        lstItem.SubItems.Add(dataRow["Username"].ToString());
+        //        lstItem.SubItems.Add(dataRow["Score"].ToString());
+        //        lvRankingUser.Items.Add(lstItem);
+        //    }
+        //    dbh.CloseConnectionToDB();
+        //}
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {

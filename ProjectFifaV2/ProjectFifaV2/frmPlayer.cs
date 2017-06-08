@@ -227,17 +227,17 @@ namespace ProjectFifaV2
             dbh.TestConnection();
             dbh.OpenConnectionToDB();
 
-            string qwrie= "Select username,score FROM tbl_users";
+            string qwrie = "Select username,score FROM tbl_users";
 
             DataTable Points = dbh.select(qwrie, "");
 
             for (int i = 0; i < Points.Rows.Count; i++)
             {
                 DataRow dataRowHome = Points.Rows[i];
-                
+
                 ListViewItem lstItem = new ListViewItem(dataRowHome["username"].ToString());
                 lstItem.SubItems.Add(dataRowHome["Score"].ToString());
-               
+
                 lvPoints.Items.Add(lstItem);
             }
         }
