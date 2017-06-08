@@ -19,7 +19,8 @@ namespace ProjectFifaV2
             dbh = new DatabaseHandler();
             InitializeComponent();
             SetListColumnWidth();
-            ShowScore();
+            ShowResults();
+            ShowRanking();
         }
 
         private void btnRankingBack_Click(object sender, EventArgs e)
@@ -34,33 +35,98 @@ namespace ProjectFifaV2
             clmScore.Width = 80;
         }
 
-        private void ShowScore()
+        //private void ShowScore()
+        //{
+        //    dbh.TestConnection();
+        //    dbh.OpenConnectionToDB();
+        //
+        //   DataTable table = dbh.FillDT("SELECT Username, Score FROM tblUsers WHERE (IsAdmin = 0) ORDER BY Score DESC");
+        //
+        //    for (int i = 0; i < table.Rows.Count; i++)
+        //    {
+        //        DataRow dataRow = table.Rows[i];
+        //        ListViewItem lstItem = new ListViewItem((i + 1).ToString());
+        //        lstItem.SubItems.Add(dataRow["Username"].ToString());
+        //        lstItem.SubItems.Add(dataRow["Score"].ToString());
+        //        lvRankingUser.Items.Add(lstItem);
+        //    }
+        //    dbh.CloseConnectionToDB();
+        //}
+
+        private void ShowResults()
         {
             dbh.TestConnection();
             dbh.OpenConnectionToDB();
 
-            DataTable table = dbh.FillDT("SELECT Username, Score FROM tblUsers WHERE (IsAdmin = 0) ORDER BY Score DESC");
+            string qwrie = "Select Id,username,score FROM tbl_users order by score desc";
 
-            for (int i = 0; i < table.Rows.Count; i++)
+            DataTable Points = dbh.select(qwrie, "");
+
+            for (int i = 0; i < Points.Rows.Count; i++)
             {
-                DataRow dataRow = table.Rows[i];
-                ListViewItem lstItem = new ListViewItem((i + 1).ToString());
-                lstItem.SubItems.Add(dataRow["Username"].ToString());
-                lstItem.SubItems.Add(dataRow["Score"].ToString());
+                DataRow dataRowHome = Points.Rows[i];
+
+               
+                ListViewItem lstItem = new ListViewItem((i+1).ToString());
+                lstItem.SubItems.Add(dataRowHome["username"].ToString());
+                lstItem.SubItems.Add(dataRowHome["Score"].ToString());
+
                 lvRankingUser.Items.Add(lstItem);
+
+                 dbh.CloseConnectionToDB();
+
             }
-            dbh.CloseConnectionToDB();
+        }
+
+        private void ShowRanking()
+        {
+            dbh.TestConnection();
+            dbh.OpenConnectionToDB();
+
+            //string qwrie2 = "Select * FROM tbl_teams";
+
+            string qwrie = "Select * FROM tbl_matches order by scoren desc";
+
+            DataTable Points = dbh.select(qwrie, "");
+
+            for (int i = 0; i < Points.Rows.Count; i++)
+            {
+                DataRow dataRowHome = Points.Rows[i];
+
+
+                ListViewItem lstItem = new ListViewItem((i + 2).ToString());
+
+                lstItem.SubItems.Add(dataRowHome["id"].ToString());
+                lstItem.SubItems.Add(dataRowHome["scoren"].ToString());
+                lstItem.SubItems.Add(dataRowHome["saldo"].ToString());
+                lstItem.SubItems.Add(dataRowHome["ranking"].ToString());
+
+
+                lvRankingTeam.Items.Add(lstItem);
+
+                dbh.CloseConnectionToDB();
+
+            }
+
+            
+
+           
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            dbh.TestConnection();
-            dbh.OpenConnectionToDB();
+            
 
-            string qwrie = "Select username,score FROM tbl_users";
         }
 
+        
+
         private void lvRanking_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmRanking_Load(object sender, EventArgs e)
         {
 
         }

@@ -20,7 +20,7 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        s#region Windows Form Designer generated code
 
         /// <summary>
         /// Required method for Designer support - do not modify
@@ -40,6 +40,7 @@
             this.clmRanking = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnMatch = new System.Windows.Forms.Button();
             this.btnAdmins = new System.Windows.Forms.Button();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // btnLoguit
@@ -97,6 +98,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lvRankingTeam.BackColor = System.Drawing.Color.Gray;
             this.lvRankingTeam.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
             this.clmTeam,
             this.clmScoren,
             this.clmSaldo,
@@ -161,9 +163,13 @@
             this.btnAdmins.Text = "Admins";
             this.btnAdmins.UseVisualStyleBackColor = false;
             // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Width = 0;
+            // 
             // frmRanking
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(27)))), ((int)(((byte)(28)))));
             this.ClientSize = new System.Drawing.Size(1248, 1037);
@@ -181,6 +187,7 @@
             this.Name = "frmRanking";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ranking";
+            this.Load += new System.EventHandler(this.frmRanking_Load);
             this.ResumeLayout(false);
 
         }
@@ -199,5 +206,6 @@
         private System.Windows.Forms.ColumnHeader clmRanking;
         private System.Windows.Forms.Button btnMatch;
         private System.Windows.Forms.Button btnAdmins;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
     }
 }
