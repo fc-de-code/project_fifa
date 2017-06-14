@@ -30,7 +30,7 @@
       </div>
       <div class="team-score">
         <div class="wrapper">
-          <h2>Teams Score</h2>
+          <h2>Teams</h2>
           <div class="content">
             <div class="team-list">
               <ul>
