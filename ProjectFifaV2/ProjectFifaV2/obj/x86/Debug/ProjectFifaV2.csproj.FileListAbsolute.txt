@@ -81,3 +81,4 @@ C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2
 C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.csproj.GenerateResource.Cache
 C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.exe
 C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.pdb
+C:\Users\marxi\Documents\projectgokers\gokkersproject\project_fifa\ProjectFifaV2\ProjectFifaV2\obj\x86\Debug\ProjectFifaV2.csprojResolveAssemblyReference.cache
