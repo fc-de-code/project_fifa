@@ -8,7 +8,7 @@ body
   background-color: #1b1b1c
   width: 100%
 
-h2, h3, h4, h5, h6, p, li,a,
+h2, h3, h4, h5, h6, p, li,a
   color: $text-color
   font-family: 'Baloo'
 h1
@@ -19,6 +19,7 @@ h1
   width: 80%
 .content
   border: 5px double $hover-color
+  margin-top: 20px
   width: 100%
 
 
@@ -298,7 +299,7 @@ nav
         color: $text-color
         font-size: 40px
         font-weight: bold
-      .player-close:hover
+      .playeradd-close:hover
         color: black
         text-decoration: none
         cursor: pointer
@@ -315,6 +316,16 @@ nav
       input
         width: 60%
         padding: 10px
+        border-top: 5px double $hover-color
+        border-left: none
+        border-right: none
+        border-bottom: 5px double $hover-color
+        font-size: 1.2em
+        align-self: center
+        font-family: 'Baloo'
+      .se
+        width: 65%
+        padding: 5px
         border-top: 5px double $hover-color
         border-left: none
         border-right: none
@@ -351,6 +362,17 @@ nav
   cursor: pointer
   background: rgba(255,255,255,  0.1)
 
+.TeamCollection
+  display: flex
+  align-items: center
+  flex-direction: column
+  width: 10%
+  border: 5px double $hover-color
+  border-radius: 19px
+  padding: 10px
+  margin-left: 20px
+  h3
+    font-size: 1.5em
 
 footer
   margin-top: 80px
@@ -360,3 +382,82 @@ footer
   li
     text-align: center
     list-style: none
+
+.MatchSelection
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  label
+    font-size: 2em
+    color: $text-color
+    margin: 10px
+    font-family: 'Baloo'
+  select
+    width: 40%
+    height: 40px
+    border-color: #fff
+    border-style: double 5px
+    background-color: $background-color
+    color: $text-color
+    text-align: center
+    font-size: 1.5em
+    font-weight: bold
+  button
+    margin: 30px
+    padding: 10px 40px
+    border-radius: 5px
+    background-color: #fc9b00
+    border-style: none
+    font-size: 1.2em
+    font-weight: bold
+    font-family: 'Baloo'
+.scoreInput
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  label
+    justify-content: space-between
+    color: $text-color
+    font-family: 'Baloo'
+    font-size: 1.5em
+  input
+    width: 40%
+    height: 40px
+    border-color: #fff
+    border-style: double 5px
+    background-color: $background-color
+    color: $text-color
+    text-align: center
+    font-size: 1.5em
+    font-weight: bold
+  button
+    margin: 30px
+    padding: 10px 40px
+    border-radius: 5px
+    background-color: #fc9b00
+    border-style: none
+    font-size: 1.2em
+    font-weight: bold
+    font-family: 'Baloo'
+.table
+  margin-top: 50px
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  thead
+
+    th
+      width: 400px
+      font-size: 1.5em
+      color: $text-color
+      justify-content: space-around
+  tbody
+    border: 5px double $hover-color
+    th
+      width: 300px
+      font-size: 1.5em
+      color: $text-color
+      justify-content: space-around

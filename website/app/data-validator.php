@@ -35,6 +35,36 @@ class DataValidator
         }
     }
 
+    public function TeamValidator($teamName, $playerAmount)
+    {
+        if(empty($teamName) == true || ($playerAmount ==0 || $playerAmount >5) )
+        {
+            $msg = "teamName and playerAmount is required";
+            return false;
+        }
+        elseif (empty($teamName) == false && ($playerAmount =1 || $playerAmount <=5))
+        {
+            return true;
+        }
+    }
+
+    public function PlayerValidator($student_id, $firstName, $LastName, $TeamId)
+    {
+        if (empty($student_id ) || empty($firstName) || empty($LastName))
+        {
+            $msg = "please fill in the field in order to continue";
+            return false;
+        }
+        if (isset($TeamId)== null)
+        {
+            $msg = "please fill in the field in order to continue";
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
 
 
 }
