@@ -1,7 +1,7 @@
 // Get the modal
 var team_modal = document.getElementById('team-add');
 // Get the button that opens the modal
-var team_btn = document.getElementById("open-modal");
+var team_btn = document.getElementById("open-team-modal");
 // Get the <span> element that closes the modal
 var team_span = document.getElementsByClassName("teamadd-close")[0];
 // When the user clicks on the button, open the modal
