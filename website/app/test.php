@@ -1,10 +1,6 @@
 <?php
 require 'init.php';
 
+$derp = new \app\MatchCollection($db);
 
-$team = new TeamCollection($db);
-
-$arr_teams = $team->GetTeams();
-echo "<pre>";
-var_dump($arr_teams);
-echo "</pre>";
+$derp->MakePoulMatchesByPoulId(1,'12:00','00:15');

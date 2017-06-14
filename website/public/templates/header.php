@@ -1,4 +1,7 @@
 <!--This header is just a suggestion. Do whatever you want with it!-->
+<?php require_once __DIR__ . '/../../app/init.php'; ?>
+<?php session_start(); ?>
+
 <!doctype html>
 <html lang="en">
 <head>

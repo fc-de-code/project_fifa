@@ -6,8 +6,32 @@
       <li><a href="finales.php">FINALES</a></li>
       <li><a href="resultaat.php">RESULTAAT</a></li>
       <li><a href="teams.php">TEAMS</a></li>
+      <?php
+      if (isset($_SESSION['admin']))
+      {
+        echo '<li><a href="scoreAdd.php">UITSLAGEN INVOEREN</li>';
+      }
+       ?>
     </ul>
-    <a id="open">LOGIN</a>
+    <a <?php
+
+    if (isset($_SESSION['admin']))
+    {
+        echo 'href="../app/loginManager.php"';
+    }
+    else
+    {
+        echo 'id="open"';
+    }
+        ?>>
+        <?php
+        if (isset($_SESSION['admin']))
+        {
+            echo "LOGOUT";
+        }
+        else
+            echo "LOGIN";
+        ?></a>
   </div>
   <div id="popup" class="login">
     <div class="loginwindow">

@@ -5,32 +5,39 @@ require 'init.php';
 if ($_SERVER['REQUEST_METHOD'] == 'GET')
 {
     session_destroy();
-    header("location: ../public/index.php");
+    header("Location: ../public/index.php");
 }
-
-$username = $_POST['username'];
-$password = $_POST['password'];
-$DataValidator = new DataValidator($db);
-
-$user = $DataValidator->LoginValidator($username, $password);
-
-if ($user)
+if ($_SERVER['REQUEST_METHOD'] == 'POST')
 {
-    if ($DataValidator->IsAdmin($user))
+
+
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $DataValidator = new DataValidator($db);
+
+    $user = $DataValidator->LoginValidator($username, $password);
+
+    if ($user)
     {
-        $_SESSION['admin'] = true;
+        if ($DataValidator->IsAdmin($user))
+        {
+            $_SESSION['admin'] = true;
+            echo "et werkt";
+        }
+        else
+        {
+            $_SESSION['admin'] = false;
+            echo "et werkt niet";
+        }
+
+        $_SESSION['user'] = $user['user'];
     }
     else
     {
-        $_SESSION['admin'] = false;
+        $msg = 'JOUW MOEDER HEEFT KK EN JOUW PASSWORD IS SLECHT EN JOUW NAAM IS NOCH SLECHTER';
     }
 
-    $_SESSION['user'] = $user['user'];
-}
-else
-{
-    $msg = 'JOUW MOEDER HEEFT KK EN JOUW PASSWORD IS SLECHT EN JOUW NAAM IS NOCH SLECHTER';
+    header("location:" . $_SERVER['HTTP_REFERER']);
 }
 
 
-header("location: ../public/index.php?msg=$msg");
