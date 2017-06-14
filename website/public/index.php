@@ -30,25 +30,18 @@
       </div>
       <div class="team-score">
         <div class="wrapper">
-          <h2>Teams Score</h2>
+          <h2>Teams</h2>
           <div class="content">
             <div class="team-list">
               <ul>
-                <li>team1</li>
-                <li>team2</li>
-                <li>team3</li>
-                <li>team4</li>
-                <li>team5</li>
-                <li>team6</li>
-                <li>team7</li>
-                <li>team8</li>
-                <li>team9</li>
-                <li>team10</li>
-                <li>team11</li>
-                <li>team12</li>
-                <li>team13</li>
-                <li>team14</li>
-                <li>team15</li>
+                <?php
+                  require_once (realpath(__DIR__) . '/../app/init.php');
+                  $team = new \App\TeamCollection($db);
+                  foreach ($team->GetTeams()as $team)
+                  {
+                      echo "<li>".$team['id'].".".$team['name']."</li>";
+                  }
+                  ?>
               </ul>
             </div>
           </div>
